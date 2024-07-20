@@ -187,14 +187,14 @@ const Header = () => {
     >
       <List>
         {navItems.map((item) => (
-          <ListItem  component={Link} to={item.path} key={item.text}>
+          <ListItem component={Link} to={item.path} key={item.text}>
             <ListItemText primary={item.text} />
           </ListItem>
         ))}
-        <ListItem  component={Link} to="/about">
+        <ListItem component={Link} to="/about">
           <ListItemText primary="ABOUT" />
         </ListItem>
-        <ListItem  component={Link} to="/blog">
+        <ListItem component={Link} to="/blog">
           <ListItemText primary="BLOG" />
         </ListItem>
       </List>
@@ -226,13 +226,15 @@ const Header = () => {
           </Typography>
         </Box>
 
-        <Typography
-          variant="h6"
-          component="div"
-          sx={{ flexGrow: 1, textAlign: "center" }}
-        >
-          BUKKO Construction Bureau
-        </Typography>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, textAlign: "center" }}
+          >
+            BUKKO Construction Bureau
+          </Typography>
+        </Link>
 
         {isMobile ? (
           <IconButton
