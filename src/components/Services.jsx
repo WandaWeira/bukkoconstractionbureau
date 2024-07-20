@@ -10,6 +10,10 @@ import {
 } from "@mui/material";
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
+import one from "../assets/one.png";
+import two from "../assets/two.png";
+import three from "../assets/three.png";
+import four from "../assets/four.png";
 
 // Styled Tab Component with full-width background image
 const StyledTab = styled(Tab)(({ image }) => ({
@@ -40,7 +44,7 @@ const StyledTab = styled(Tab)(({ image }) => ({
 const tabData = [
   {
     label: "CONSTRUCTION",
-    tabImage: "src/assets/one.png",
+    tabImage: one,
     contentImage:
       "https://img.freepik.com/free-photo/construction-site-with-workers_23-2147622231.jpg?size=626&ext=jpg",
     content: (
@@ -65,7 +69,7 @@ const tabData = [
         <Link to="/construction" style={{ textDecoration: "none" }}>
           <Box
             sx={{
-              background: `url(src/assets/one.png) center center / cover no-repeat`,
+              background: `url(${one}) center center / cover no-repeat`,
               color: "white",
               textTransform: "none",
               marginTop: "20px",
@@ -84,7 +88,7 @@ const tabData = [
   },
   {
     label: "ARCHITECTURE",
-    tabImage: "src/assets/two.png",
+    tabImage: two,
     contentImage:
       "https://img.freepik.com/free-photo/real-estate-concept_23-2147752423.jpg?size=626&ext=jpg",
     content: (
@@ -109,7 +113,7 @@ const tabData = [
         <Link to="/architecture" style={{ textDecoration: "none" }}>
           <Box
             sx={{
-              background: `url(src/assets/two.png) center center / cover no-repeat`,
+              background: `url(${two}) center center / cover no-repeat`,
               color: "white",
               textTransform: "none",
               marginTop: "20px",
@@ -128,7 +132,7 @@ const tabData = [
   },
   {
     label: "RENOVATIONS",
-    tabImage: "src/assets/three.png",
+    tabImage: three,
     contentImage:
       "https://img.freepik.com/free-photo/house-by-beach_23-2147734323.jpg?size=626&ext=jpg",
     content: (
@@ -153,7 +157,7 @@ const tabData = [
         <Link to="/renovations" style={{ textDecoration: "none" }}>
           <Box
             sx={{
-              background: `url(src/assets/three.png) center center / cover no-repeat`,
+              background: `url(${three}) center center / cover no-repeat`,
               color: "white",
               textTransform: "none",
               marginTop: "20px",
@@ -172,7 +176,7 @@ const tabData = [
   },
   {
     label: "REMODELING",
-    tabImage: "src/assets/four.png",
+    tabImage: four,
     contentImage:
       "https://img.freepik.com/free-photo/cleaning-service-concept_23-2147760543.jpg?size=626&ext=jpg",
     content: (
@@ -197,7 +201,7 @@ const tabData = [
         <Link to="/remodeling" style={{ textDecoration: "none" }}>
           <Box
             sx={{
-              background: `url(src/assets/four.png) center center / cover no-repeat`,
+              background: `url(${four}) center center / cover no-repeat`,
               color: "white",
               textTransform: "none",
               marginTop: "20px",
