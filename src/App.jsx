@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
-      <Router basename="/bukkoconstractionbureau">
+      <Router>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
