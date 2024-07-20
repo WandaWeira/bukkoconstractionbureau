@@ -9,6 +9,7 @@ import {
   Button,
 } from "@mui/material";
 import { styled } from "@mui/system";
+import { Link } from "react-router-dom";
 
 // Styled Tab Component with full-width background image
 const StyledTab = styled(Tab)(({ image }) => ({
@@ -61,21 +62,23 @@ const tabData = [
           just take our word for it - Check out our portfolio to see the
           difference!
         </Typography>
-        <Box
-          sx={{
-            background: `url(src/assets/one.png) center center / cover no-repeat`,
-            color: "white",
-            textTransform: "none",
-            marginTop: "20px",
-            padding: "10px 20px",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          View More Details
-        </Box>
+        <Link to="/construction" style={{ textDecoration: "none" }}>
+          <Box
+            sx={{
+              background: `url(src/assets/one.png) center center / cover no-repeat`,
+              color: "white",
+              textTransform: "none",
+              marginTop: "20px",
+              padding: "10px 20px",
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            View More Details
+          </Box>
+        </Link>
       </>
     ),
   },
@@ -103,21 +106,23 @@ const tabData = [
           5-star experience to our VIP clients so you can rest assured that
           under our care your property will be managed to pristine perfection.
         </Typography>
-        <Box
-          sx={{
-            background: `url(src/assets/two.png) center center / cover no-repeat`,
-            color: "white",
-            textTransform: "none",
-            marginTop: "20px",
-            padding: "10px 20px",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          View More Details
-        </Box>
+        <Link to="/architecture" style={{ textDecoration: "none" }}>
+          <Box
+            sx={{
+              background: `url(src/assets/two.png) center center / cover no-repeat`,
+              color: "white",
+              textTransform: "none",
+              marginTop: "20px",
+              padding: "10px 20px",
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            View More Details
+          </Box>
+        </Link>
       </>
     ),
   },
@@ -145,21 +150,23 @@ const tabData = [
           5-star experience to our VIP clients so you can rest assured that
           under our care your property will be managed to pristine perfection.
         </Typography>
-        <Box
-          sx={{
-            background: `url(src/assets/three.png) center center / cover no-repeat`,
-            color: "white",
-            textTransform: "none",
-            marginTop: "20px",
-            padding: "10px 20px",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          View More Details
-        </Box>
+        <Link to="/renovations" style={{ textDecoration: "none" }}>
+          <Box
+            sx={{
+              background: `url(src/assets/three.png) center center / cover no-repeat`,
+              color: "white",
+              textTransform: "none",
+              marginTop: "20px",
+              padding: "10px 20px",
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            View More Details
+          </Box>
+        </Link>
       </>
     ),
   },
@@ -187,21 +194,23 @@ const tabData = [
           5-star experience to our VIP clients so you can rest assured that
           under our care your property will be managed to pristine perfection.
         </Typography>
-        <Box
-          sx={{
-            background: `url(src/assets/four.png) center center / cover no-repeat`,
-            color: "white",
-            textTransform: "none",
-            marginTop: "20px",
-            padding: "10px 20px",
-            width: "100%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          View More Details
-        </Box>
+        <Link to="/remodeling" style={{ textDecoration: "none" }}>
+          <Box
+            sx={{
+              background: `url(src/assets/four.png) center center / cover no-repeat`,
+              color: "white",
+              textTransform: "none",
+              marginTop: "20px",
+              padding: "10px 20px",
+              width: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            View More Details
+          </Box>
+        </Link>
       </>
     ),
   },
