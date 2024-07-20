@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection";
 import Services from "../components/Services";
 import BlogLayout from "../components/Blogs";
 import Testimonials from "../components/Testimonials";
+import { Box } from "@mui/material";
 
 const Home = () => {
   return (
