@@ -1,27 +1,12 @@
-// import React from 'react'
-
-// const Architecture = () => {
-//   return (
-//     <div>Architecture</div>
-//   )
-// }
-
-// export default Architecture
-
 import React from "react";
 import {
   Container,
   Typography,
   Box,
   Grid,
-  Button,
   Paper,
-  List,
-  ListItem,
-  ListItemText,
   useMediaQuery,
   useTheme,
-  ListItemIcon,
 } from "@mui/material";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 
