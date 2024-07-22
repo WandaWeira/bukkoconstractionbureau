@@ -6,7 +6,6 @@ import {
   Tab,
   useMediaQuery,
   Container,
-  Button,
 } from "@mui/material";
 import { styled } from "@mui/system";
 import { Link } from "react-router-dom";
@@ -60,11 +59,11 @@ const tabData = [
           Construction
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: "20px" }}>
-          We're construction geniuses. There we said it. New builds, historic
-          restoration, elaborate renovations, or investment rental properties -
-          we've done it all ... and we've done it all to perfection. But don't
-          just take our word for it - Check out our portfolio to see the
-          difference!
+          Quality construction is at the heart of our business. Our skilled team
+          handles every aspect of the building process with precision and care.
+          Whether it&#39;s a new build, commercial development, or residential
+          project, we deliver exceptional results on time and within budget,
+          ensuring structural integrity and aesthetic excellence.
         </Typography>
         <Link to="/construction" style={{ textDecoration: "none" }}>
           <Box
@@ -104,11 +103,11 @@ const tabData = [
           ARCHITECTURE
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: "20px" }}>
-          You know what they say, “time is money,” and we know you value yours,
-          that’s why we designed our property management services to handle
-          well, everything. Our bespoke services are tailored to deliver a
-          5-star experience to our VIP clients so you can rest assured that
-          under our care your property will be managed to pristine perfection.
+          Our architectural designs are a blend of creativity and functionality.
+          We craft unique and sustainable structures that not only stand out but
+          also integrate seamlessly with their surroundings. From initial
+          concept to final blueprint, our architects work closely with you to
+          ensure every detail reflects your vision and needs.
         </Typography>
         <Link to="/architecture" style={{ textDecoration: "none" }}>
           <Box
@@ -148,11 +147,11 @@ const tabData = [
           RENOVATIONS
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: "20px" }}>
-          You know what they say, “time is money,” and we know you value yours,
-          that’s why we designed our property management services to handle
-          well, everything. Our bespoke services are tailored to deliver a
-          5-star experience to our VIP clients so you can rest assured that
-          under our care your property will be managed to pristine perfection.
+          Revitalize your space with our comprehensive renovation services. We
+          transform outdated or inefficient areas into modern, functional, and
+          beautiful environments. Our team meticulously plans and executes each
+          renovation project, enhancing both the value and enjoyment of your
+          property.
         </Typography>
         <Link to="/renovations" style={{ textDecoration: "none" }}>
           <Box
@@ -192,11 +191,11 @@ const tabData = [
           REMODELING
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: "20px" }}>
-          You know what they say, “time is money,” and we know you value yours,
-          that’s why we designed our property management services to handle
-          well, everything. Our bespoke services are tailored to deliver a
-          5-star experience to our VIP clients so you can rest assured that
-          under our care your property will be managed to pristine perfection.
+          Our remodelling services are tailored to your lifestyle and
+          preferences. Whether it&#39;s a kitchen upgrade, bathroom makeover, or
+          a complete home transformation, we focus on innovation, quality, and
+          attention to detail. We work with you to create personalized spaces
+          that reflect your style and meet your everyday needs.
         </Typography>
         <Link to="/remodeling" style={{ textDecoration: "none" }}>
           <Box
@@ -239,13 +238,11 @@ const Services = () => {
         padding: "20px",
         marginTop: "5rem",
         marginBottom: "5rem",
+        backgroundColor: "#f6f6f6",
       }}
     >
       <Typography variant="h4" sx={{ marginBottom: "3rem" }}>
-        WHAT'S YOUR NEXT MOVE?
-      </Typography>
-      <Typography variant="h5" sx={{ marginBottom: "3rem" }}>
-        View our Listings
+        Our Expertise:
       </Typography>
       <Tabs
         value={tabIndex}
@@ -273,7 +270,7 @@ const Services = () => {
             alignItems: "center",
             textAlign: "left",
             padding: "20px",
-            mt: "100px",
+            // mt: "100px",
           }}
         >
           <Box
@@ -282,9 +279,12 @@ const Services = () => {
             alt={tabData[tabIndex].label}
             sx={{
               width: isSmallScreen ? "100%" : "500px",
-              height: isSmallScreen ? "auto" : "500px",
+              height: isSmallScreen ? "500px" : "300px",
               marginRight: isSmallScreen ? "0" : "20px",
               marginBottom: isSmallScreen ? "20px" : "0",
+              borderRadius: "10px",
+              boxShadow: "0px 1px 5px rgba(0, 0, 0, 0.2)",
+              objectFit: "cover",
             }}
           />
           <Box sx={{ width: isSmallScreen ? "100%" : "50%" }}>

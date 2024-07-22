@@ -52,23 +52,23 @@ const carouselData = [
   {
     image:
       "https://img.freepik.com/free-photo/civil-engineer-construction-worker-manager-holding-digital-tablet-blueprints-talking-planing-about-construction-site-cooperation-teamwork-concept_640221-156.jpg?size=626&ext=jpg",
-    prefix: "WE",
-    scriptText: "build",
-    suffix: "IN THE LOWCOUNTRY",
+    prefix: "Innovative",
+    scriptText: "Designs,",
+    suffix: "Quality Construction",
   },
   {
     image:
       "https://img.freepik.com/premium-photo/construction-site-with-building-construction-crane-background_406811-25297.jpg?size=626&ext=jpg",
-    prefix: "WE",
-    scriptText: "design",
-    suffix: "LUXURY HOMES",
+    prefix: "Innovative",
+    scriptText: "Designs,",
+    suffix: "Quality Construction",
   },
   {
     image:
       "https://img.freepik.com/free-photo/scene-construction-site-with-equipment_23-2151317290.jpg?size=626&ext=jpg",
-    prefix: "WE",
-    scriptText: "create",
-    suffix: "BEAUTIFUL SPACES",
+    prefix: "Innovative",
+    scriptText: "Designs,",
+    suffix: "Quality Construction",
   },
   // Add more items as needed
 ];

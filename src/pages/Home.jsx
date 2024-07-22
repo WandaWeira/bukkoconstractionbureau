@@ -3,16 +3,16 @@ import HeroSection from "../components/HeroSection";
 import Services from "../components/Services";
 import BlogLayout from "../components/Blogs";
 import Testimonials from "../components/Testimonials";
-import { Box } from "@mui/material";
+import Overview from "../components/Overview";
+import Clients from "../components/Clients";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <Box sx={{ mt: 4, mb: 4, p: 6 }}>
-        <Services />
-        <BlogLayout />
-      </Box>
+      <Clients />
+      <Overview />
+      <Services />
       <Testimonials />
     </>
   );

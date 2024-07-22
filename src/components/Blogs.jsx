@@ -84,7 +84,7 @@ const TextOverlay = styled("div")({
 
 const BlogLayout = () => {
   return (
-    <div style={{ padding: "20px", paddingTop: "5rem" }}>
+    <Box sx={{ py: "5rem", backgroundColor: "#f6f6f6" }}>
       <Container>
         <Typography
           variant="h4"
@@ -117,7 +117,7 @@ const BlogLayout = () => {
           </Grid>
         </Box>
       </Container>
-    </div>
+    </Box>
   );
 };
 

@@ -21,46 +21,32 @@ import EmailIcon from "@mui/icons-material/Email";
 
 const testimonials = [
   {
-    name: "Mike Torello",
-    title: "Executive Engineer",
-    avatar: "src/assets/four.png", // replace with the actual path to the avatar image
+    name: "Mr. Edwin Ssebunya",
+    title: "CEO, Royal Suites Hotel Bugolobi",
+    avatar: "", // replace with the actual path to the avatar image
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "Working with Bukko Design and Construction Bureau Ltd. for the renovation and interior design of Royal Suites Hotel Bugolobi has been a truly exceptional experience. Their innovative approach and meticulous attention to detail have transformed our hotel into a stunning and functional space that exceeds our expectations. From concept to completion, Bukko's commitment to quality and client satisfaction was evident in every aspect of the project. The team’s creativity and professionalism have greatly enhanced our guest experience, and we are proud to showcase their work. We highly recommend Bukko for their outstanding craftsmanship and dedication to excellence.",
   },
   {
-    name: "Rick Wright",
-    title: "Executive Engineer",
-    avatar: "src/assets/four.png",
+    name: "Mr. John",
+    title: "Kawuku residential house remodeling",
+    avatar: "",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "I am thrilled with the results of the remodeling project Bukko Design and Construction Bureau Ltd. completed for my residential house. Their team transformed my home into a luxurious and sophisticated space, exceeding all my expectations. From the initial design to the final touches, Bukko's attention to detail and commitment to quality were evident. The seamless integration of modern amenities and elegant design elements has truly elevated my living experience. I couldn’t be more satisfied with their work and highly recommend Bukko for anyone looking to enhance their home with a touch of luxury.",
   },
   {
-    name: "Devon Miles",
-    title: "Executive Engineer",
-    avatar: "src/assets/four.png",
+    name: "Mr. Bharat Halai",
+    title: "Operations Manager at Seyani Brothers International, Uganda.",
+    avatar: "", // replace with the actual path to the avatar image
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "Our collaboration with Bukko Design and Construction Bureau Ltd. on various subcontracts has been highly satisfactory. Bukko consistently demonstrates a high level of professionalism and expertise in every project. Their attention to detail, timely execution, and commitment to quality have greatly contributed to the success of our ventures. The team’s ability to deliver outstanding results and their proactive approach to addressing challenges make them a valuable partner. We look forward to continuing our successful partnership with Bukko and recommend them for their exceptional service and reliability.",
   },
   {
-    name: "Mike Torello",
-    title: "Executive Engineer",
-    avatar: "src/assets/four.png", // replace with the actual path to the avatar image
+    name: "",
+    title: "Topline Investments Ltd.",
+    avatar: "",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    name: "Rick Wright",
-    title: "Executive Engineer",
-    avatar: "src/assets/four.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
-  },
-  {
-    name: "Devon Miles",
-    title: "Executive Engineer",
-    avatar: "src/assets/four.png",
-    content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.",
+      "Partnering with Bukko Design and Construction Bureau Ltd. for our commercial projects in Uganda has been a remarkable experience. Their architectural designs have brought a new level of sophistication and functionality to our developments. Bukko&#39;s innovative approach and keen understanding of our needs have resulted in designs that not only meet but exceed our expectations. Their commitment to excellence and attention to detail have been instrumental in the success of our projects. We highly recommend Bukko for their outstanding architectural expertise and dedication to delivering top-quality results.",
   },
 ];
 
@@ -86,7 +72,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <Box sx={{ backgroundColor: "#f6f6f6", py: 8 }}>
+      <Box sx={{ py: 8 }}>
         <Container>
           <Typography
             variant="h5"
@@ -104,7 +90,7 @@ const Testimonials = () => {
           >
             What Our Clients Say
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             align="center"
             gutterBottom
@@ -114,7 +100,7 @@ const Testimonials = () => {
             vulputate libero et velit interdum, ac aliquet odio mattis. Class
             aptent taciti sociosqu ad litora torquent per conubia nostra, per
             inceptos himenaeos.
-          </Typography>
+          </Typography> */}
 
           <Box position="relative" width="100%">
             <Grid container justifyContent="center">
@@ -144,7 +130,7 @@ const Testimonials = () => {
                     />
                     <Typography
                       variant="body2"
-                      align="center"
+                      // align="center"
                       gutterBottom
                       sx={{ color: " #333" }}
                     >
@@ -203,7 +189,7 @@ const Testimonials = () => {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          textAlign: "center",
+          // textAlign: "center",
           py: 8,
           backgroundColor: "#2E2E2E",
         }}

@@ -55,19 +55,38 @@ const About = () => {
               <span style={{ color: "orange" }}>
                 As a full-spectrum property
               </span>{" "}
-              management firm, we offer personalized luxury home management and
-              maintenance services throughout the Charleston, Bluffton, Hilton
-              Head areas. We provide unparalleled services including
-              housekeeping, preventive maintenance, concierge services, and
-              more, including other essential services as requested by the
-              homeowner.
+              Bukko Design and Construction Bureau Ltd is a leading firm known
+              for its innovative designs and quality construction. Starting as a
+              small team with a vision to redefine industry standards, Bukko
+              quickly distinguished itself through its founders&#39; commitment
+              to excellence, expanding from residential and commercial projects
+              to industrial and public structures. Emphasizing creative yet
+              functional design, meticulous construction, client-centered
+              service, and sustainable practices, Bukko has built a reputation
+              for delivering exceptional projects. Today, we continue to push
+              industry boundaries, creating spaces that inspire, endure, and
+              elevate everyday life.
             </Typography>
             <Typography variant="body1" paragraph>
-              Whether your asset is beachfront along one of the lowcountry’s
-              sun-filled beaches, or behind the gates in the upscale community
-              of Palmetto Bluff, as owners ourselves, we appreciate the
-              investment you have made in your property. As such, we work to
-              ensure all is safe and maintained during your absence.
+              <span style={{ fontWeight: "bold" }}>Our Mission: </span> At Bukko
+              Design and Construction Bureau Ltd., our mission is to transform
+              visions into reality through innovative design, superior
+              craftsmanship, and a commitment to client satisfaction. We strive
+              to create functional, beautiful, and sustainable spaces that
+              enhance the quality of life for our clients and communities.<br />
+              <span style={{ fontWeight: "bold" }}>Our Vision: </span> Our
+              vision is to be a leader in the architecture and construction
+              industry, renowned for our creativity, quality, and integrity. We
+              aim to continuously push the boundaries of design and
+              construction, fostering a culture of excellence and sustainability
+              while building lasting relationships with our clients.<br />
+              <span style={{ fontWeight: "bold" }}>Our Values: </span>
+              <span style={{ fontWeight: "bold" }}>"IQSITE"</span> aligns with
+              Bukko Design and Construction Bureau&#39;s commitment to{" "}
+              <span style={{ fontWeight: "bold" }}>
+                Innovation, Quality, Sustainability, Integrity, Excellence, and
+                Teamwork,
+              </span>
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
