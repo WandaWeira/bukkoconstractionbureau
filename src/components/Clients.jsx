@@ -4,12 +4,12 @@ import { styled } from "@mui/system";
 // import clientLogos from './clientLogos'; // Array of client logo URLs
 
 const clientLogos = [
-  "http://localhost:5173/src/assets/bukkologo.png",
-  "http://localhost:5173/src/assets/bukkologo.png",
-  "http://localhost:5173/src/assets/bukkologo.png",
-  "http://localhost:5173/src/assets/bukkologo.png",
-  "http://localhost:5173/src/assets/bukkologo.png",
-  "http://localhost:5173/src/assets/bukkologo.png",
+  "/src/assets/bukkologo.png",
+  "/src/assets/bukkologo.png",
+  "/src/assets/bukkologo.png",
+  "/src/assets/bukkologo.png",
+  "/src/assets/bukkologo.png",
+  "/src/assets/bukkologo.png",
   // Add more logos as needed
 ];
 
