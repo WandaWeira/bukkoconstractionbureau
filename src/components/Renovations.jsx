@@ -9,19 +9,6 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
-
-const listItems = [
-  "Weekly Absentee Home Care Check with Summary Report",
-  "Vendor Services (cleaning, landscaper, pool maintenance, etc)",
-  "Renovation/ Project Management/General Contractor",
-  "Pre-Arrival Home Setup",
-  "Delivery Acceptance/ Errand Running",
-  "Departure Home Check",
-  "Grocery Shopping/ Delivery",
-  "Home Organization & Cleaning",
-  "Travel Planning",
-];
 
 const services = [
   {
