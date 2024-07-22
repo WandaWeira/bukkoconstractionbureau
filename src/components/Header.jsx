@@ -8,29 +8,24 @@ import {
   IconButton,
   useMediaQuery,
   useTheme,
-  Drawer,
-  List,
-  ListItem,
-  ListItemText,
+  Menu,
+  MenuItem,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import Logo from "../assets/bukkologo.png";
 
 const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
 
-  const toggleDrawer = (open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
-    setDrawerOpen(open);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
   };
 
   const navItems = [
@@ -41,91 +36,94 @@ const Header = () => {
     { text: "REMODELING", path: "/remodeling" },
   ];
 
-  const drawer = (
-    <Box
-      sx={{ width: 250 }}
-      role="presentation"
-      onClick={toggleDrawer(false)}
-      onKeyDown={toggleDrawer(false)}
-    >
-      <List>
-        {navItems.map((item) => (
-          <ListItem component={Link} to={item.path} key={item.text}>
-            <ListItemText primary={item.text} />
-          </ListItem>
-        ))}
-        <ListItem component={Link} to="/about">
-          <ListItemText primary="ABOUT" />
-        </ListItem>
-        {/* <ListItem component={Link} to="/blog">
-          <ListItemText primary="BLOG" />
-        </ListItem> */}
-      </List>
-    </Box>
-  );
-
   return (
-    <AppBar
-      position="static"
-      color="default"
-      elevation={0}
-      mt="5px"
-      // sx={{ position: "fixed", top: "0px", width: "100%", zIndex: " 1000" }}
-    >
+    <AppBar position="static" color="default" elevation={0} mt="5px">
       <Toolbar sx={{ justifyContent: "space-between", flexWrap: "wrap" }}>
         <Box
           sx={{
             display: "flex",
             alignItems: "center",
-            flexGrow: isMobile ? 1 : 0,
+            flexGrow: isMobile ? 1.5 : 0,
           }}
         >
           <img
             src={Logo}
             alt="logo"
-            style={{ width: "100px", height: "80px", objectFit: "cover", marginBottom: "20px"}}
+            style={{
+              width: "100px",
+              height: "80px",
+              objectFit: "cover",
+              marginBottom: "20px",
+            }}
           />
-          {/* <Typography
-            variant="body2"
-            sx={{ mr: 2, display: { xs: "none", sm: "block" } }}
-          >
-            CONTACT US
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{ display: { xs: "none", sm: "block" } }}
-          >
-            +256 782 500 843
-          </Typography> */}
         </Box>
 
-        <Link to="/" style={{ textDecoration: "none" }}>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, textAlign: "center", color: "#e8631d" }}
-          >
-            BUKKO DESIGN & CONSTRUCTION BUREAU
-          </Typography>
-        </Link>
+        {!isMobile && (
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{
+                textAlign: "center",
+                color: "#e8631d",
+                fontSize: {
+                  xs: "20px",
+                  sm: "20px",
+                  md: "1rem",
+                  lg: "1.2rem",
+                }, // Responsive font size
+                fontWeight: { xs: "normal", sm: "bold" }, // Optional: Adjust font weight
+              }}
+            >
+              BUKKO DESIGN & CONSTRUCTION BUREAU
+            </Typography>
+          </Link>
+        )}
 
         {isMobile ? (
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={toggleDrawer(true)}
-          >
-            <MenuIcon />
-          </IconButton>
+          <>
+            <IconButton
+              color="inherit"
+              aria-label="open menu"
+              edge="start"
+              onClick={handleClick}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              anchorEl={anchorEl}
+              open={Boolean(anchorEl)}
+              onClose={handleClose}
+              PaperProps={{ sx: { minWidth: 200 } }} // Adjust width as needed
+            >
+              {navItems.map((item) => (
+                <MenuItem component={Link} to={item.path} onClick={handleClose} key={item.text}>
+                  {item.text}
+                </MenuItem>
+              ))}
+              <MenuItem component={Link} to="/about" onClick={handleClose}>
+                ABOUT
+              </MenuItem>
+            </Menu>
+          </>
         ) : (
-          <Box sx={{ display: "flex" }}>
-            <Button color="inherit" component={Link} to="/about">
+          <Box sx={{ display: "flex", gap: "1rem" }}>
+            <Button
+              variant="contained"
+              component={Link}
+              to="/about"
+              sx={{ backgroundColor: "#e8631d" }}
+            >
               ABOUT
             </Button>
-            {/* <Button color="inherit" component={Link} to="/blog">
-              BLOG
-            </Button> */}
+            <Button
+              variant="outlined"
+              component={Link}
+              to="/blog"
+              sx={{ borderColor: "#e8631d", color: "#e8631d" }}
+            >
+              CONTACT
+            </Button>
           </Box>
         )}
       </Toolbar>
@@ -152,9 +150,6 @@ const Header = () => {
           ))}
         </Box>
       )}
-      <Drawer anchor="right" open={drawerOpen} onClose={toggleDrawer(false)}>
-        {drawer}
-      </Drawer>
     </AppBar>
   );
 };

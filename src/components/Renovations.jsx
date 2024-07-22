@@ -117,11 +117,11 @@ const Renovations = () => {
         <Typography variant="h5" component="h2" gutterBottom>
           Our Projects
         </Typography>
-        <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+        {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
           <span style={{ color: "orange" }}>
             Our comprehensive offering includes:
           </span>
-        </Typography>
+        </Typography> */}
       </Box>
       <Grid
         container

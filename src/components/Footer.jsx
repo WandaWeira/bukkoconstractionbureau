@@ -23,28 +23,8 @@ const Footer = () => {
       }}
     >
       <Grid container spacing={4}>
-        {/* <Grid item xs={12} textAlign="center" mb={2}>
-          <Typography variant="h6" gutterBottom>
-            TIKTOK
-          </Typography>
-          <Box sx={{ mt: 3, mb: 4 }}>
-            <Link
-              href="https://www.instagram.com/bukkoconstructionbureau?igsh=YTQwZjQ0NmI0OA=="
-              sx={{
-                textDecoration: "none",
-                color: "#FFA500", // Orange color
-                fontSize: "1.5rem",
-                border: "1px solid #ddd",
-                p: "1rem",
-                fontFamily: "'Dancing Script', cursive",
-              }}
-            >
-              @bukkoconstructionbureau
-            </Link>
-          </Box>
-        </Grid> */}
         <Grid item xs={12} sm={6} md={3}>
-          <Typography variant="h6" gutterBottom>
+          <Typography variant="h6">
             BUKKO DESIGN & CONSTRUCTION BUREAU
           </Typography>
           <Typography>

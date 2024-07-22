@@ -11,29 +11,42 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import arch1 from "../assets/arch1.jpg";
+import arch2 from "../assets/arch2.jpg";
+import arch3 from "../assets/arch3.jpg";
+import arch4 from "../assets/arch4.jpg";
+import arch5 from "../assets/arch5.jpg";
+import arch6 from "../assets/arch6.jpeg";
+import arch7 from "../assets/arch7.jpg";
 
 const services = [
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: arch2,
     text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
     details: "Detailed information about the home maintenance service.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: arch3,
     text: "A VACATION CONCIERGE TO ENSURE YOUR HOME IS READY FOR YOUR ARRIVAL AND TO LEND A HAND DURING YOUR STAY",
     details: "Detailed information about the vacation concierge service.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: arch7,
     text: "AN AWARD-WINNING Architecture COMPANY FOR Architecture, ADDITIONS AND NEW BUILDS",
     details: "Detailed information about the Architecture company.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: arch5,
+    text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
+    details: "Detailed information about the real estate brokerage.",
+  },
+  {
+    image: arch6,
+    text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
+    details: "Detailed information about the real estate brokerage.",
+  },
+  {
+    image: arch4,
     text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
     details: "Detailed information about the real estate brokerage.",
   },
@@ -68,7 +81,7 @@ const Architecture = () => {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          LUXURY SIMPLIFIED HOME SERVICES
+          ARCHITECTURAL SERVICES
         </Typography>
         <Typography
           variant="h6"
@@ -100,7 +113,7 @@ const Architecture = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <img
-            src="https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+            src={arch1}
             alt="Luxury Home"
             style={{ width: "100%", borderRadius: "8px" }}
           />
@@ -117,11 +130,11 @@ const Architecture = () => {
         <Typography variant="h5" component="h2" gutterBottom>
           Our Projects
         </Typography>
-        <Typography variant="subtitle1" color="textSecondary" gutterBottom>
+        {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
           <span style={{ color: "orange" }}>
             Our comprehensive offering includes:
           </span>
-        </Typography>
+        </Typography> */}
       </Box>
       <Grid
         container
@@ -193,12 +206,18 @@ const Architecture = () => {
                 <img
                   src={selectedService.image}
                   alt="Selected Service"
-                  style={{ width: "100%", borderRadius: "8px", marginBottom: "16px" }}
+                  style={{
+                    width: "100%",
+                    borderRadius: "8px",
+                    marginBottom: "16px",
+                  }}
                 />
                 <Typography variant="h6" component="h2" gutterBottom>
                   {selectedService.text}
                 </Typography>
-                <Typography sx={{ mt: 2 }}>{selectedService.details}</Typography>
+                <Typography sx={{ mt: 2 }}>
+                  {selectedService.details}
+                </Typography>
               </>
             )}
           </Box>

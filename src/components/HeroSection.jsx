@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Box, Typography, Fade } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
+import one from "../assets/1.jpg";
+import two from "../assets/2.jpg";
+import three from "../assets/3.jpg";
+import four from "../assets/4.jpg";
+import five from "../assets/5.jpg";
 
 const HeroContainer = styled(Box)(({ theme }) => ({
   position: "relative",
@@ -9,16 +14,22 @@ const HeroContainer = styled(Box)(({ theme }) => ({
   overflow: "hidden",
 }));
 
-const ImageBackground = styled("img")({
+const ImageSlider = styled(Box)({
   position: "absolute",
-  top: "50%",
-  left: "50%",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  transition: "transform 1s ease-in-out",
+});
+
+const ImageSlide = styled("div")({
   minWidth: "100%",
-  minHeight: "100%",
-  width: "auto",
-  height: "auto",
-  transform: "translate(-50%, -50%)",
-  objectFit: "cover",
+  width: "100%",
+  height: "100%",
+  backgroundSize: "cover",
+  backgroundPosition: "center",
 });
 
 const ContentOverlay = styled(Box)(({ theme }) => ({
@@ -50,27 +61,35 @@ const ScriptText = styled("span")({
 
 const carouselData = [
   {
-    image:
-      "https://img.freepik.com/free-photo/civil-engineer-construction-worker-manager-holding-digital-tablet-blueprints-talking-planing-about-construction-site-cooperation-teamwork-concept_640221-156.jpg?size=626&ext=jpg",
+    image: one,
     prefix: "Innovative",
     scriptText: "Designs,",
     suffix: "Quality Construction",
   },
   {
-    image:
-      "https://img.freepik.com/premium-photo/construction-site-with-building-construction-crane-background_406811-25297.jpg?size=626&ext=jpg",
+    image: two,
     prefix: "Innovative",
     scriptText: "Designs,",
     suffix: "Quality Construction",
   },
   {
-    image:
-      "https://img.freepik.com/free-photo/scene-construction-site-with-equipment_23-2151317290.jpg?size=626&ext=jpg",
+    image: three,
     prefix: "Innovative",
     scriptText: "Designs,",
     suffix: "Quality Construction",
   },
-  // Add more items as needed
+  {
+    image: four,
+    prefix: "Innovative",
+    scriptText: "Designs,",
+    suffix: "Quality Construction",
+  },
+  {
+    image: five,
+    prefix: "Innovative",
+    scriptText: "Designs,",
+    suffix: "Quality Construction",
+  },
 ];
 
 const HeroSection = () => {
@@ -84,21 +103,22 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
 
-  const currentItem = carouselData[currentIndex];
-
   return (
     <HeroContainer>
-      <Fade in={true} timeout={1000}>
-        <ImageBackground src={currentItem.image} alt="Hero Background" />
-      </Fade>
+      <ImageSlider style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {carouselData.map((item, index) => (
+          <ImageSlide
+            key={index}
+            style={{ backgroundImage: `url(${item.image})` }}
+          />
+        ))}
+      </ImageSlider>
       <ContentOverlay>
-        <Fade in={true} timeout={1000}>
-          <HeroText variant="h1">
-            {currentItem.prefix}{" "}
-            <ScriptText>{currentItem.scriptText}</ScriptText>{" "}
-            {currentItem.suffix}
-          </HeroText>
-        </Fade>
+        <HeroText variant="h1">
+          {carouselData[currentIndex].prefix}{" "}
+          <ScriptText>{carouselData[currentIndex].scriptText}</ScriptText>{" "}
+          {carouselData[currentIndex].suffix}
+        </HeroText>
       </ContentOverlay>
     </HeroContainer>
   );
