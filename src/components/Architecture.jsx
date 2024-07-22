@@ -115,7 +115,7 @@ const Architecture = () => {
         sx={{ borderTop: "1px solid #333" }}
       >
         <Typography variant="h5" component="h2" gutterBottom>
-          ALL UNDER ONE ROOF
+          Our Projects
         </Typography>
         <Typography variant="subtitle1" color="textSecondary" gutterBottom>
           <span style={{ color: "orange" }}>

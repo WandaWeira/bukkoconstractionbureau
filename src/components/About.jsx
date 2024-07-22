@@ -12,27 +12,9 @@ import {
   Button,
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
-
-const people = [
-  {
-    name: "CHRIS LEIGH-JONES",
-    title: "principal",
-    imageUrl:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
-  },
-  {
-    name: "SEBRINA LEIGH-JONES",
-    title: "co-founder & vice president",
-    imageUrl:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
-  },
-  {
-    name: "MARY MOORE",
-    title: "brand strategist & content manager",
-    imageUrl:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
-  },
-];
+import one from "../assets/one.png";
+import two from "../assets/two.png";
+import three from "../assets/three.png";
 
 const About = () => {
   const theme = useTheme();
@@ -48,45 +30,29 @@ const About = () => {
 
         <Grid container spacing={4} mb={8}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h6" component="h2" gutterBottom>
+            {/* <Typography variant="h6" component="h2" gutterBottom>
               ONE STOP SHOP
-            </Typography>
+            </Typography> */}
             <Typography variant="body1" paragraph>
               <span style={{ color: "orange" }}>
                 As a full-spectrum property
               </span>{" "}
-              Bukko Design and Construction Bureau Ltd is a leading firm known
-              for its innovative designs and quality construction. Starting as a
-              small team with a vision to redefine industry standards, Bukko
+              <span style={{ fontWeight: "bold" }}>
+                Bukko Design and Construction Bureau Ltd
+              </span>{" "}
+              is a leading firm known for its innovative designs and quality
+              construction. Starting as a small team with a vision to redefine
+              industry standards,{" "}
+              <span style={{ fontWeight: "bold" }}>Bukko</span>
               quickly distinguished itself through its founders&#39; commitment
               to excellence, expanding from residential and commercial projects
               to industrial and public structures. Emphasizing creative yet
               functional design, meticulous construction, client-centered
-              service, and sustainable practices, Bukko has built a reputation
-              for delivering exceptional projects. Today, we continue to push
-              industry boundaries, creating spaces that inspire, endure, and
-              elevate everyday life.
-            </Typography>
-            <Typography variant="body1" paragraph>
-              <span style={{ fontWeight: "bold" }}>Our Mission: </span> At Bukko
-              Design and Construction Bureau Ltd., our mission is to transform
-              visions into reality through innovative design, superior
-              craftsmanship, and a commitment to client satisfaction. We strive
-              to create functional, beautiful, and sustainable spaces that
-              enhance the quality of life for our clients and communities.<br />
-              <span style={{ fontWeight: "bold" }}>Our Vision: </span> Our
-              vision is to be a leader in the architecture and construction
-              industry, renowned for our creativity, quality, and integrity. We
-              aim to continuously push the boundaries of design and
-              construction, fostering a culture of excellence and sustainability
-              while building lasting relationships with our clients.<br />
-              <span style={{ fontWeight: "bold" }}>Our Values: </span>
-              <span style={{ fontWeight: "bold" }}>"IQSITE"</span> aligns with
-              Bukko Design and Construction Bureau&#39;s commitment to{" "}
-              <span style={{ fontWeight: "bold" }}>
-                Innovation, Quality, Sustainability, Integrity, Excellence, and
-                Teamwork,
-              </span>
+              service, and sustainable practices,{" "}
+              <span style={{ fontWeight: "bold" }}>Bukko</span> has built a
+              reputation for delivering exceptional projects. Today, we continue
+              to push industry boundaries, creating spaces that inspire, endure,
+              and elevate everyday life.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -98,50 +64,90 @@ const About = () => {
           </Grid>
         </Grid>
 
-        <Box py={4} textAlign="center">
-          <Typography variant="h4" component="h2" gutterBottom>
-            Meet the Team
-          </Typography>
-        </Box>
+        <Grid container spacing={4} mb={8}>
+          <Grid item xs={6} md={6} style={{ position: "relative" }}>
+            <img src={one} alt="" style={{ width: "50%" }} />
+            <span
+              style={{
+                position: "absolute",
+                top: "30%",
+                left: "30%",
+                transform: "translate(-50%, -50%)",
+                fontWeight: "bold",
+                // backgroundColor: "rgba(255, 255, 255, 0.7)",
+                padding: "5px",
+                color: "#fff",
+                fontSize: "1.8rem",
+              }}
+            >
+              Our Mission
+            </span>
+            <Typography variant="body1" paragraph>
+              At{" "}
+              <span style={{ fontWeight: "bold" }}>
+                Bukko Design and Construction Bureau Ltd
+              </span>
+              ., our mission is to transform visions into reality through
+              innovative design, superior craftsmanship, and a commitment to
+              client satisfaction. We strive to create functional, beautiful,
+              and sustainable spaces that enhance the quality of life for our
+              clients and communities.
+            </Typography>
+          </Grid>
 
-        {/* team */}
-        {/* <Container maxWidth="lg" sx={{ py: 4 }}> */}
-        <Grid container spacing={3} mb={8}>
-          {people.map((person, index) => (
-            <Grid item key={index} xs={12} sm={6} md={4}>
-              <Card
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-              >
-                <CardMedia
-                  component="img"
-                  image={person.imageUrl}
-                  alt={person.name}
-                  sx={{
-                    height: isMobile ? 200 : 250,
-                    objectFit: "cover",
-                  }}
-                />
-                <CardContent sx={{ flexGrow: 1, textAlign: "center" }}>
-                  <Typography
-                    variant="h6"
-                    component="div"
-                    sx={{ fontWeight: "bold" }}
-                  >
-                    {person.name}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {person.title}
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
+          <Grid item xs={6} md={6} style={{ position: "relative" }}>
+            <img src={two} alt="" style={{ width: "50%" }} />
+            <span
+              style={{
+                position: "absolute",
+                top: "30%",
+                left: "30%",
+                transform: "translate(-50%, -50%)",
+                fontWeight: "bold",
+                // backgroundColor: "rgba(255, 255, 255, 0.7)",
+                padding: "5px",
+                color: "#fff",
+                fontSize: "1.8rem",
+              }}
+            >
+              Our Vision
+            </span>
+            <Typography variant="body1" paragraph>
+              Our vision is to be a leader in the architecture and construction
+              industry, renowned for our creativity, quality, and integrity. We
+              aim to continuously push the boundaries of design and
+              construction, fostering a culture of excellence and sustainability
+              while building lasting relationships with our clients.
+            </Typography>
+          </Grid>
+
+          <Grid item xs={6} md={6} style={{ position: "relative" }}>
+            <img src={two} alt="" style={{ width: "50%" }} />
+            <span
+              style={{
+                position: "absolute",
+                top: "30%",
+                left: "30%",
+                transform: "translate(-50%, -50%)",
+                fontWeight: "bold",
+                // backgroundColor: "rgba(255, 255, 255, 0.7)",
+                padding: "5px",
+                color: "#fff",
+                fontSize: "1.8rem",
+              }}
+            >
+              Our Values
+            </span>
+            <Typography variant="body1" paragraph>
+              <span style={{ fontWeight: "bold" }}>"IQSITE"</span> aligns with
+              Bukko Design and Construction Bureau&#39;s commitment to{" "}
+              <span style={{ fontWeight: "bold" }}>
+                Innovation, Quality, Sustainability, Integrity, Excellence, and
+                Teamwork,
+              </span>
+            </Typography>
+          </Grid>
         </Grid>
-        {/* </Container> */}
       </Container>
       <Box
         sx={{

@@ -115,7 +115,7 @@ const Renovations = () => {
         sx={{ borderTop: "1px solid #333" }}
       >
         <Typography variant="h5" component="h2" gutterBottom>
-          ALL UNDER ONE ROOF
+          Our Projects
         </Typography>
         <Typography variant="subtitle1" color="textSecondary" gutterBottom>
           <span style={{ color: "orange" }}>
@@ -193,12 +193,18 @@ const Renovations = () => {
                 <img
                   src={selectedService.image}
                   alt="Selected Service"
-                  style={{ width: "100%", borderRadius: "8px", marginBottom: "16px" }}
+                  style={{
+                    width: "100%",
+                    borderRadius: "8px",
+                    marginBottom: "16px",
+                  }}
                 />
                 <Typography variant="h6" component="h2" gutterBottom>
                   {selectedService.text}
                 </Typography>
-                <Typography sx={{ mt: 2 }}>{selectedService.details}</Typography>
+                <Typography sx={{ mt: 2 }}>
+                  {selectedService.details}
+                </Typography>
               </>
             )}
           </Box>

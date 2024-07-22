@@ -57,9 +57,9 @@ const Header = () => {
         <ListItem component={Link} to="/about">
           <ListItemText primary="ABOUT" />
         </ListItem>
-        <ListItem component={Link} to="/blog">
+        {/* <ListItem component={Link} to="/blog">
           <ListItemText primary="BLOG" />
-        </ListItem>
+        </ListItem> */}
       </List>
     </Box>
   );
@@ -69,6 +69,7 @@ const Header = () => {
       position="static"
       color="default"
       elevation={0}
+      mt="5px"
       // sx={{ position: "fixed", top: "0px", width: "100%", zIndex: " 1000" }}
     >
       <Toolbar sx={{ justifyContent: "space-between", flexWrap: "wrap" }}>
@@ -79,8 +80,12 @@ const Header = () => {
             flexGrow: isMobile ? 1 : 0,
           }}
         >
-          <AccountCircleIcon sx={{ mr: 1 }} />
-          <Typography
+          <img
+            src={Logo}
+            alt="logo"
+            style={{ width: "100px", height: "80px", objectFit: "cover", marginBottom: "20px"}}
+          />
+          {/* <Typography
             variant="body2"
             sx={{ mr: 2, display: { xs: "none", sm: "block" } }}
           >
@@ -91,20 +96,16 @@ const Header = () => {
             sx={{ display: { xs: "none", sm: "block" } }}
           >
             +256 782 500 843
-          </Typography>
+          </Typography> */}
         </Box>
 
         <Link to="/" style={{ textDecoration: "none" }}>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, textAlign: "center" }}
+            sx={{ flexGrow: 1, textAlign: "center", color: "#e8631d" }}
           >
-            <img
-              src={Logo}
-              alt="logo"
-              style={{ width: "100px", height: "80px", objectFit: "cover" }}
-            />
+            BUKKO DESIGN & CONSTRUCTION BUREAU
           </Typography>
         </Link>
 
@@ -122,9 +123,9 @@ const Header = () => {
             <Button color="inherit" component={Link} to="/about">
               ABOUT
             </Button>
-            <Button color="inherit" component={Link} to="/blog">
+            {/* <Button color="inherit" component={Link} to="/blog">
               BLOG
-            </Button>
+            </Button> */}
           </Box>
         )}
       </Toolbar>

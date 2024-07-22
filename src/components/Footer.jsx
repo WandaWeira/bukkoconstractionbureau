@@ -23,7 +23,7 @@ const Footer = () => {
       }}
     >
       <Grid container spacing={4}>
-        <Grid item xs={12} textAlign="center" mb={2}>
+        {/* <Grid item xs={12} textAlign="center" mb={2}>
           <Typography variant="h6" gutterBottom>
             TIKTOK
           </Typography>
@@ -42,10 +42,10 @@ const Footer = () => {
               @bukkoconstructionbureau
             </Link>
           </Box>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sm={6} md={3}>
           <Typography variant="h6" gutterBottom>
-            Bukko Construction
+            BUKKO DESIGN & CONSTRUCTION BUREAU
           </Typography>
           <Typography>
             Kisozi complex,
@@ -73,13 +73,13 @@ const Footer = () => {
             ABOUT
           </Typography>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
-            <Link
+            {/* <Link
               href="/blog"
               variant="body2"
               sx={{ textDecoration: "none", color: "inherit", mb: 1 }}
             >
               BLOG
-            </Link>
+            </Link> */}
             <Link
               href="/construction"
               variant="body2"
@@ -159,7 +159,8 @@ const Footer = () => {
       </Grid>
       <Box sx={{ mt: 4, borderTop: "1px solid #ddd", pt: 2 }}>
         <Typography variant="body2" color="textSecondary" align="center">
-          © 2024 Luxury Simplified LLC, Privacy policy, Terms & Conditions
+          © 2024 BUKKO DESIGN & CONSTRUCTION BUREAU, Privacy policy, Terms &
+          Conditions
         </Typography>
       </Box>
     </Box>

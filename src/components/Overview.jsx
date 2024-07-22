@@ -5,26 +5,36 @@ const Overview = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   return (
-    <Container sx={{mt: 8}}>
+    <Box sx={{ mt: 8, backgroundColor: "#f6f6f6", p: 12 }}>
       <Grid container spacing={4} mb={8}>
-        <Grid item xs={12} md={6}>
-          <Typography variant="h6" component="h2" gutterBottom>
+        <Grid item xs={12} md={6} sx={{ textAlign: "left" }}>
+          <Typography variant="h4" sx={{ marginBottom: "3rem" }}>
             Overview
           </Typography>
           <Typography variant="body1" paragraph>
-            Welcome to Bukko Design and Construction Bureau Ltd., where
-            innovation meets craftsmanship. With a legacy of excellence in
-            architecture, construction, renovations, and remodeling, we are
-            dedicated to transforming your vision into reality. Our expert team
-            combines creative design, meticulous planning, and superior
-            construction techniques to deliver exceptional results for
-            residential, commercial, and industrial projects. At Bukko, we pride
+            Welcome to{" "}
+            <span style={{ fontWeight: "bold" }}>
+              Bukko Design and Construction Bureau Ltd
+            </span>
+            ., where innovation meets craftsmanship. With a legacy of excellence
+            in architecture, construction, renovations, and remodeling, we are
+            dedicated to transforming your vision into reality.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            Our expert team combines creative design, meticulous planning, and
+            superior construction techniques to deliver exceptional results for
+            residential, commercial, and industrial projects. At{" "}
+            <span style={{ fontWeight: "bold" }}>Bukko</span>, we pride
             ourselves on our holistic approach, ensuring seamless integration of
             aesthetic appeal and functional excellence. Whether building your
             dream home, renovating a space, or undertaking a large-scale
             commercial development, our commitment to quality and client
-            satisfaction sets us apart. Discover the Bukko difference – where
-            every project is a masterpiece in the making. Bukko Design and
+            satisfaction sets us apart.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            Discover the <span style={{ fontWeight: "bold" }}>Bukko</span>{" "}
+            difference – where every project is a masterpiece in the making.{" "}
+            <span style={{ fontWeight: "bold" }}>Bukko</span> Design and
             Construction Bureau Ltd, Crafting Excellence Since Day One.
           </Typography>
         </Grid>
@@ -36,7 +46,7 @@ const Overview = () => {
           />
         </Grid>
       </Grid>
-    </Container>
+    </Box>
   );
 };
 

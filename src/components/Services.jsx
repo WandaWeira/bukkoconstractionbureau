@@ -236,9 +236,9 @@ const Services = () => {
       sx={{
         textAlign: "center",
         padding: "20px",
-        marginTop: "5rem",
+        // marginTop: "5rem",
         marginBottom: "5rem",
-        backgroundColor: "#f6f6f6",
+        // backgroundColor: "#f6f6f6",
       }}
     >
       <Typography variant="h4" sx={{ marginBottom: "3rem" }}>
@@ -278,8 +278,8 @@ const Services = () => {
             src={tabData[tabIndex].contentImage}
             alt={tabData[tabIndex].label}
             sx={{
-              width: isSmallScreen ? "100%" : "500px",
-              height: isSmallScreen ? "500px" : "300px",
+              width: isSmallScreen ? "100%" : "100%",
+              height: isSmallScreen ? "500px" : "500px",
               marginRight: isSmallScreen ? "0" : "20px",
               marginBottom: isSmallScreen ? "20px" : "0",
               borderRadius: "10px",
@@ -287,6 +287,7 @@ const Services = () => {
               objectFit: "cover",
             }}
           />
+         
           <Box sx={{ width: isSmallScreen ? "100%" : "50%" }}>
             {tabData[tabIndex].content}
           </Box>

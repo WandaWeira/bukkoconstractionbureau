@@ -72,7 +72,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <Box sx={{ py: 8 }}>
+      <Box sx={{ py: 8, backgroundColor: "#f6f6f6" }}>
         <Container>
           <Typography
             variant="h5"
@@ -90,18 +90,6 @@ const Testimonials = () => {
           >
             What Our Clients Say
           </Typography>
-          {/* <Typography
-            variant="body1"
-            align="center"
-            gutterBottom
-            sx={{ mt: 8 }}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos.
-          </Typography> */}
-
           <Box position="relative" width="100%">
             <Grid container justifyContent="center">
               <Grid item xs={12} sm={8} md={6}>
@@ -132,7 +120,7 @@ const Testimonials = () => {
                       variant="body2"
                       // align="center"
                       gutterBottom
-                      sx={{ color: " #333" }}
+                      sx={{ color: " #333", fontStyle: "italic" }}
                     >
                       {testimonials[currentIndex].content}
                     </Typography>
@@ -140,7 +128,7 @@ const Testimonials = () => {
                       variant="h6"
                       align="center"
                       gutterBottom
-                      sx={{ color: "#333" }}
+                      sx={{ color: "#333", fontWeight: "bold" }}
                     >
                       {testimonials[currentIndex].name}
                     </Typography>
