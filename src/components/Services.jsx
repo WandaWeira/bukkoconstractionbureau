@@ -13,6 +13,8 @@ import one from "../assets/one.png";
 import two from "../assets/two.png";
 import three from "../assets/three.png";
 import four from "../assets/four.png";
+import arch0 from "../assets/arch0.jpg";
+import const0 from "../assets/const0.jpg";
 
 // Styled Tab Component with full-width background image
 const StyledTab = styled(Tab)(({ image }) => ({
@@ -44,8 +46,7 @@ const tabData = [
   {
     label: "CONSTRUCTION",
     tabImage: one,
-    contentImage:
-      "https://img.freepik.com/free-photo/construction-site-with-workers_23-2147622231.jpg?size=626&ext=jpg",
+    contentImage: const0,
     content: (
       <>
         <Typography
@@ -88,8 +89,7 @@ const tabData = [
   {
     label: "ARCHITECTURE",
     tabImage: two,
-    contentImage:
-      "https://img.freepik.com/free-photo/real-estate-concept_23-2147752423.jpg?size=626&ext=jpg",
+    contentImage: arch0,
     content: (
       <>
         <Typography
@@ -287,7 +287,7 @@ const Services = () => {
               objectFit: "cover",
             }}
           />
-         
+
           <Box sx={{ width: isSmallScreen ? "100%" : "50%" }}>
             {tabData[tabIndex].content}
           </Box>
