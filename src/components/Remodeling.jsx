@@ -11,29 +11,30 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import remodel0 from "../assets/remodel0.jpg";
+import remodel1 from "../assets/remodel1.jpg";
+import remodel2 from "../assets/remodel2.jpg";
+import remodel3 from "../assets/remodel3.jpg";
+import remodel4 from "../assets/remodel4.jpg";
 
 const services = [
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: remodel1,
     text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
     details: "Detailed information about the home maintenance service.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: remodel2,
     text: "A VACATION CONCIERGE TO ENSURE YOUR HOME IS READY FOR YOUR ARRIVAL AND TO LEND A HAND DURING YOUR STAY",
     details: "Detailed information about the vacation concierge service.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: remodel3,
     text: "AN AWARD-WINNING Remodeling COMPANY FOR Remodeling, ADDITIONS AND NEW BUILDS",
     details: "Detailed information about the Remodeling company.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: remodel4,
     text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
     details: "Detailed information about the real estate brokerage.",
   },
@@ -100,7 +101,7 @@ const Remodeling = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <img
-            src="https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+            src={remodel0}
             alt="Luxury Home"
             style={{ width: "100%", borderRadius: "8px" }}
           />
@@ -193,12 +194,18 @@ const Remodeling = () => {
                 <img
                   src={selectedService.image}
                   alt="Selected Service"
-                  style={{ width: "100%", borderRadius: "8px", marginBottom: "16px" }}
+                  style={{
+                    width: "100%",
+                    borderRadius: "8px",
+                    marginBottom: "16px",
+                  }}
                 />
                 <Typography variant="h6" component="h2" gutterBottom>
                   {selectedService.text}
                 </Typography>
-                <Typography sx={{ mt: 2 }}>{selectedService.details}</Typography>
+                <Typography sx={{ mt: 2 }}>
+                  {selectedService.details}
+                </Typography>
               </>
             )}
           </Box>

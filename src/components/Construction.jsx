@@ -11,11 +11,12 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import construct1 from "../assets/construct1.jpg"
+// import construct1 from "../assets/construct1.jpg"
 import construct2 from "../assets/construct2.jpg"
 import construct3 from "../assets/construct3.jpg"
-import construct4 from "../assets/construct4.jpg"
+import construct1 from "../assets/construct1.jpg"
 import construct5 from "../assets/construct5.jpeg"
+import contract0 from "../assets/contract45.jpeg"
 
 const services = [
   {
@@ -101,7 +102,7 @@ const Construction = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <img
-            src={construct4}
+            src={contract0}
             alt="Luxury Home"
             style={{ width: "100%", borderRadius: "8px" }}
           />

@@ -14,7 +14,9 @@ import two from "../assets/two.png";
 import three from "../assets/three.png";
 import four from "../assets/four.png";
 import arch0 from "../assets/arch0.jpg";
-import const0 from "../assets/const0.jpg";
+import const0 from "../assets/contract45.jpeg";
+import remodel0 from "../assets/remodel0.jpg";
+import renovation0 from "../assets/removation0.jpeg";
 
 // Styled Tab Component with full-width background image
 const StyledTab = styled(Tab)(({ image }) => ({
@@ -132,8 +134,7 @@ const tabData = [
   {
     label: "RENOVATIONS",
     tabImage: three,
-    contentImage:
-      "https://img.freepik.com/free-photo/house-by-beach_23-2147734323.jpg?size=626&ext=jpg",
+    contentImage: renovation0,
     content: (
       <>
         <Typography
@@ -176,8 +177,7 @@ const tabData = [
   {
     label: "REMODELING",
     tabImage: four,
-    contentImage:
-      "https://img.freepik.com/free-photo/cleaning-service-concept_23-2147760543.jpg?size=626&ext=jpg",
+    contentImage: remodel0,
     content: (
       <>
         <Typography
@@ -278,7 +278,7 @@ const Services = () => {
             src={tabData[tabIndex].contentImage}
             alt={tabData[tabIndex].label}
             sx={{
-              width: isSmallScreen ? "100%" : "100%",
+              width: isSmallScreen ? "100%" : "80%",
               height: isSmallScreen ? "500px" : "500px",
               marginRight: isSmallScreen ? "0" : "20px",
               marginBottom: isSmallScreen ? "20px" : "0",

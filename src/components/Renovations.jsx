@@ -11,29 +11,30 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
+import renovation1 from "../assets/renovation1.jpg";
+import renovation2 from "../assets/renovation2.jpg";
+import renovation3 from "../assets/renovation3.jpg";
+import renovation4 from "../assets/renovatopn4.jpg";
+import renovation5 from "../assets/renovation5.jpg";
 
 const services = [
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: renovation2,
     text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
     details: "Detailed information about the home maintenance service.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: renovation3,
     text: "A VACATION CONCIERGE TO ENSURE YOUR HOME IS READY FOR YOUR ARRIVAL AND TO LEND A HAND DURING YOUR STAY",
     details: "Detailed information about the vacation concierge service.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: renovation4,
     text: "AN AWARD-WINNING RENOVATIONS COMPANY FOR RENOVATIONS, ADDITIONS AND NEW BUILDS",
     details: "Detailed information about the renovations company.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8",
+    image: renovation5,
     text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
     details: "Detailed information about the real estate brokerage.",
   },
@@ -100,7 +101,7 @@ const Renovations = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <img
-            src="https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+            src={renovation1}
             alt="Luxury Home"
             style={{ width: "100%", borderRadius: "8px" }}
           />
@@ -117,11 +118,6 @@ const Renovations = () => {
         <Typography variant="h5" component="h2" gutterBottom>
           Our Projects
         </Typography>
-        {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
-          <span style={{ color: "orange" }}>
-            Our comprehensive offering includes:
-          </span>
-        </Typography> */}
       </Box>
       <Grid
         container
