@@ -215,7 +215,7 @@ const Footer = () => {
         color: "#fff",
         padding: "40px 0",
         position: "relative",
-        mt: 8
+        // mt: 8
       }}
     >
       <Box
@@ -278,7 +278,7 @@ const Footer = () => {
               <Link href="/architecture" underline="none" color="inherit">
                 ARCHITECTURE
               </Link>
-              <Link href="/renovation" underline="none" color="inherit">
+              <Link href="/renovations" underline="none" color="inherit">
                 RENOVATIONS
               </Link>
               <Link href="/remodeling" underline="none" color="inherit">

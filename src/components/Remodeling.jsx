@@ -59,7 +59,7 @@ const Remodeling = () => {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ marginTop: "2.5rem" }}>
+    <Container maxWidth="lg" sx={{ marginTop: "2.5rem", mb: 8 }}>
       <Box
         py={4}
         sx={{

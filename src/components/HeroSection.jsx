@@ -94,22 +94,21 @@ const carouselData = [
 
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(1);
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   const length = carouselData.length;
 
   const handleTransitionEnd = () => {
-    setIsTransitioning(true);
+    setIsTransitioning(false);
     if (currentIndex === 0) {
       setCurrentIndex(length);
-      setIsTransitioning(false);
     } else if (currentIndex === length + 1) {
       setCurrentIndex(1);
-      setIsTransitioning(false);
     }
   };
 
   useEffect(() => {
     const timer = setInterval(() => {
+      setIsTransitioning(true);
       setCurrentIndex((prevIndex) => prevIndex + 1);
     }, 5000);
 
@@ -125,17 +124,26 @@ const HeroSection = () => {
         }}
         onTransitionEnd={handleTransitionEnd}
       >
-        <ImageSlide style={{ backgroundImage: `url(${carouselData[length - 1].image})` }} />
+        <ImageSlide
+          style={{ backgroundImage: `url(${carouselData[length - 1].image})` }}
+        />
         {carouselData.map((item, index) => (
-          <ImageSlide key={index} style={{ backgroundImage: `url(${item.image})` }} />
+          <ImageSlide
+            key={index}
+            style={{ backgroundImage: `url(${item.image})` }}
+          />
         ))}
-        <ImageSlide style={{ backgroundImage: `url(${carouselData[0].image})` }} />
+        <ImageSlide
+          style={{ backgroundImage: `url(${carouselData[0].image})` }}
+        />
       </ImageSlider>
       <ContentOverlay>
         <HeroText variant="h1">
-          {carouselData[(currentIndex - 1) % length].prefix}{" "}
-          <ScriptText>{carouselData[(currentIndex - 1) % length].scriptText}</ScriptText>{" "}
-          {carouselData[(currentIndex - 1) % length].suffix}
+          {carouselData[(currentIndex - 1 + length) % length].prefix}{" "}
+          <ScriptText>
+            {carouselData[(currentIndex - 1 + length) % length].scriptText}
+          </ScriptText>{" "}
+          {carouselData[(currentIndex - 1 + length) % length].suffix}
         </HeroText>
       </ContentOverlay>
     </HeroContainer>
