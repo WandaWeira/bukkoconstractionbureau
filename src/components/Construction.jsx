@@ -12,15 +12,16 @@ import {
   useTheme,
 } from "@mui/material";
 // import construct1 from "../assets/construct1.jpg"
-import construct2 from "../assets/construct2.jpg"
-import construct3 from "../assets/construct3.jpg"
-import construct1 from "../assets/construct1.jpg"
-import construct5 from "../assets/construct5.jpeg"
-import contract0 from "../assets/contract45.jpeg"
+import construct2 from "../assets/construct2.jpg";
+import construct3 from "../assets/construct3.jpg";
+import construct1 from "../assets/construct1.jpg";
+import construct5 from "../assets/construct5.jpeg";
+// import contract0 from "../assets/contract45.jpeg";
+import constr from "../assets/const.jpg";
 
 const services = [
   {
-    image: construct5,
+    image: constr,
     text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
     details: "Detailed information about the home maintenance service.",
   },
@@ -30,7 +31,7 @@ const services = [
     details: "Detailed information about the vacation concierge service.",
   },
   {
-    image: construct3,
+    image: construct5,
     text: "AN AWARD-WINNING Construction COMPANY FOR Construction, ADDITIONS AND NEW BUILDS",
     details: "Detailed information about the Construction company.",
   },
@@ -102,7 +103,7 @@ const Construction = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <img
-            src={contract0}
+            src={construct3}
             alt="Luxury Home"
             style={{ width: "100%", borderRadius: "8px" }}
           />
@@ -140,7 +141,7 @@ const Construction = () => {
               <img
                 src={service.image}
                 alt="Service"
-                style={{ width: "100%", borderRadius: "8px" }}
+                style={{ width: "100%", borderRadius: "8px", height: "300px", objectFit: "cover" }}
               />
               <Box
                 style={{
@@ -195,12 +196,18 @@ const Construction = () => {
                 <img
                   src={selectedService.image}
                   alt="Selected Service"
-                  style={{ width: "100%", borderRadius: "8px", marginBottom: "16px" }}
+                  style={{
+                    width: "100%",
+                    borderRadius: "8px",
+                    marginBottom: "16px",
+                  }}
                 />
                 <Typography variant="h6" component="h2" gutterBottom>
                   {selectedService.text}
                 </Typography>
-                <Typography sx={{ mt: 2 }}>{selectedService.details}</Typography>
+                <Typography sx={{ mt: 2 }}>
+                  {selectedService.details}
+                </Typography>
               </>
             )}
           </Box>

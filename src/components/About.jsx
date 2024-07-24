@@ -14,7 +14,7 @@ import {
 import EmailIcon from "@mui/icons-material/Email";
 import one from "../assets/one.png";
 import two from "../assets/two.png";
-import three from "../assets/three.png";
+// import three from "../assets/three.png";
 
 const About = () => {
   const theme = useTheme();
@@ -30,13 +30,7 @@ const About = () => {
 
         <Grid container spacing={4} mb={8}>
           <Grid item xs={12} md={6}>
-            {/* <Typography variant="h6" component="h2" gutterBottom>
-              ONE STOP SHOP
-            </Typography> */}
             <Typography variant="body1" paragraph>
-              <span style={{ color: "orange" }}>
-                As a full-spectrum property
-              </span>{" "}
               <span style={{ fontWeight: "bold" }}>
                 Bukko Design and Construction Bureau Ltd
               </span>{" "}
@@ -121,7 +115,7 @@ const About = () => {
             </Typography>
           </Grid>
 
-          <Grid item xs={6} md={6} style={{ position: "relative" }}>
+          {/* <Grid item xs={6} md={6} style={{ position: "relative" }}>
             <img src={two} alt="" style={{ width: "50%" }} />
             <span
               style={{
@@ -146,9 +140,54 @@ const About = () => {
                 Teamwork,
               </span>
             </Typography>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          textAlign: "center",
+          // justifyContent: "center",
+        }}
+      >
+        <Grid item xs={6} md={6} style={{ position: "relative" }}>
+          <img src={two} alt="" style={{ width: "50%" }} />
+          <span
+            style={{
+              position: "absolute",
+              top: "30%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              fontWeight: "bold",
+              // backgroundColor: "rgba(255, 255, 255, 0.7)",
+              padding: "5px",
+              color: "#fff",
+              fontSize: "1.8rem",
+            }}
+          >
+            Our Values
+          </span>
+          <Typography
+            variant="body1"
+            paragraph
+            sx={{
+              // width: "50%",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <span style={{ fontWeight: "bold" }}>"IQSITE"</span>aligns with
+            Bukko Design and Construction Bureau&#39;s commitment to{" "}
+            <span style={{ fontWeight: "bold" }}>
+              Innovation, Quality, Sustainability, Integrity, Excellence, and
+              Teamwork,
+            </span>
+          </Typography>
+        </Grid>
+      </Box>
       <Box
         sx={{
           display: "flex",

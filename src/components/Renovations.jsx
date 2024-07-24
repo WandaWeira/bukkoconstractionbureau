@@ -134,7 +134,12 @@ const Renovations = () => {
               <img
                 src={service.image}
                 alt="Service"
-                style={{ width: "100%", borderRadius: "8px" }}
+                style={{
+                  width: "100%",
+                  borderRadius: "8px",
+                  height: "300px",
+                  objectFit: "cover",
+                }}
               />
               <Box
                 style={{

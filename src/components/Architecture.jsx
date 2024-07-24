@@ -115,7 +115,7 @@ const Architecture = () => {
           <img
             src={arch1}
             alt="Luxury Home"
-            style={{ width: "100%", borderRadius: "8px" }}
+            style={{ width: "100%", borderRadius: "8px", height: "300px", objectFit: "cover" }}
           />
         </Grid>
       </Grid>

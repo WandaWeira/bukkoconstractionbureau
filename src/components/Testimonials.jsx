@@ -13,17 +13,20 @@ import {
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import EmailIcon from "@mui/icons-material/Email";
-// import {
-//   ArrowBackIosIcon,
-//   ArrowForwardIosIcon,
-//   EmailIcon,
-// } from "@mui/icons-material";
+import Logo1 from "../assets/seyani.jpg";
+import Logo2 from "../assets/CATIC.png";
+import Logo3 from "../assets/FB_IMG_1678698681858.jpg";
+import Logo4 from "../assets/FB_IMG_1678698974581.jpg";
+import Logo5 from "../assets/polad-uganda-logo.jpg";
+import Logo6 from "../assets/royallogo.png";
+import Logo7 from "../assets/state_house.png";
+import Logo8 from "../assets/TALI LogoFinal_RGB.jpg";
 
 const testimonials = [
   {
     name: "Mr. Edwin Ssebunya",
     title: "CEO, Royal Suites Hotel Bugolobi",
-    avatar: "", // replace with the actual path to the avatar image
+    avatar: Logo6, // replace with the actual path to the avatar image
     content:
       "Working with Bukko Design and Construction Bureau Ltd. for the renovation and interior design of Royal Suites Hotel Bugolobi has been a truly exceptional experience. Their innovative approach and meticulous attention to detail have transformed our hotel into a stunning and functional space that exceeds our expectations. From concept to completion, Bukko's commitment to quality and client satisfaction was evident in every aspect of the project. The team’s creativity and professionalism have greatly enhanced our guest experience, and we are proud to showcase their work. We highly recommend Bukko for their outstanding craftsmanship and dedication to excellence.",
   },
@@ -37,7 +40,7 @@ const testimonials = [
   {
     name: "Mr. Bharat Halai",
     title: "Operations Manager at Seyani Brothers International, Uganda.",
-    avatar: "", // replace with the actual path to the avatar image
+    avatar: Logo1, // replace with the actual path to the avatar image
     content:
       "Our collaboration with Bukko Design and Construction Bureau Ltd. on various subcontracts has been highly satisfactory. Bukko consistently demonstrates a high level of professionalism and expertise in every project. Their attention to detail, timely execution, and commitment to quality have greatly contributed to the success of our ventures. The team’s ability to deliver outstanding results and their proactive approach to addressing challenges make them a valuable partner. We look forward to continuing our successful partnership with Bukko and recommend them for their exceptional service and reliability.",
   },

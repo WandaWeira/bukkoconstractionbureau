@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Typography, useMediaQuery, Grid } from "@mui/material";
+import one from "../assets/5.jpg";
 
 const Overview = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
@@ -40,9 +41,9 @@ const Overview = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <img
-            src="https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+            src={one}
             alt="Luxury Home"
-            style={{ width: "100%", borderRadius: "8px" }}
+            style={{ width: "100%", borderRadius: "8px", marginTop: "6rem" }}
           />
         </Grid>
       </Grid>

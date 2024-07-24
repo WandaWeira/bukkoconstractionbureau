@@ -16,6 +16,7 @@ import remodel1 from "../assets/remodel1.jpg";
 import remodel2 from "../assets/remodel2.jpg";
 import remodel3 from "../assets/remodel3.jpg";
 import remodel4 from "../assets/remodel4.jpg";
+import remodeling from "../assets/remodeling.jpeg";
 
 const services = [
   {
@@ -101,7 +102,7 @@ const Remodeling = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <img
-            src={remodel0}
+            src={remodeling}
             alt="Luxury Home"
             style={{ width: "100%", borderRadius: "8px" }}
           />
@@ -139,7 +140,7 @@ const Remodeling = () => {
               <img
                 src={service.image}
                 alt="Service"
-                style={{ width: "100%", borderRadius: "8px" }}
+                style={{ width: "100%", borderRadius: "8px", height: "300px", objectFit: "cover" }}
               />
               <Box
                 style={{

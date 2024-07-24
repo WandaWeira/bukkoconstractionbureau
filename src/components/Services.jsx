@@ -17,6 +17,7 @@ import arch0 from "../assets/arch0.jpg";
 import const0 from "../assets/contract45.jpeg";
 import remodel0 from "../assets/remodel0.jpg";
 import renovation0 from "../assets/removation0.jpeg";
+import construct5 from "../assets/construct5.jpeg";
 
 // Styled Tab Component with full-width background image
 const StyledTab = styled(Tab)(({ image }) => ({
@@ -48,7 +49,7 @@ const tabData = [
   {
     label: "CONSTRUCTION",
     tabImage: one,
-    contentImage: const0,
+    contentImage: construct5,
     content: (
       <>
         <Typography
@@ -91,7 +92,7 @@ const tabData = [
   {
     label: "ARCHITECTURE",
     tabImage: two,
-    contentImage: arch0,
+    contentImage: const0,
     content: (
       <>
         <Typography
@@ -267,7 +268,7 @@ const Services = () => {
             display: "flex",
             flexDirection: isSmallScreen ? "column" : "row",
             justifyContent: "space-between",
-            alignItems: "center",
+            // alignItems: "center",
             textAlign: "left",
             padding: "20px",
             // mt: "100px",
