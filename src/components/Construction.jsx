@@ -12,10 +12,10 @@ import {
   useTheme,
 } from "@mui/material";
 // import construct1 from "../assets/construct1.jpg"
-import construct2 from "../assets/construct2.jpg";
-import construct3 from "../assets/construct3.jpg";
-import construct1 from "../assets/construct1.jpg";
-import construct5 from "../assets/construct5.jpeg";
+import construct2 from "../assets/construction1.jpg";
+import construct3 from "../assets/construction2.jpg";
+import construct1 from "../assets/construction3.jpg";
+import construct5 from "../assets/construction4.jpg";
 // import contract0 from "../assets/contract45.jpeg";
 import constr from "../assets/const.jpg";
 
@@ -198,6 +198,7 @@ const Construction = () => {
                     width: "100%",
                     borderRadius: "8px",
                     marginBottom: "16px",
+                    objectFit: "contain",
                   }}
                 />
                 <Typography variant="h6" component="h2" gutterBottom>

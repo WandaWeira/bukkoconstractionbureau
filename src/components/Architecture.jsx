@@ -12,12 +12,10 @@ import {
   useTheme,
 } from "@mui/material";
 import arch1 from "../assets/arch1.jpg";
-import arch2 from "../assets/arch2.jpg";
-import arch3 from "../assets/arch3.jpg";
-import arch4 from "../assets/arch4.jpg";
-import arch5 from "../assets/arch5.jpg";
-import arch6 from "../assets/arch6.jpeg";
-import arch7 from "../assets/arch7.jpg";
+import arch2 from "../assets/architecture3.jpg";
+import arch3 from "../assets/architecture4.jpg";
+import arch4 from "../assets/architecture6.jpg";
+import arch5 from "../assets/architecture5.jpg";
 
 const services = [
   {
@@ -31,17 +29,7 @@ const services = [
     details: "Detailed information about the vacation concierge service.",
   },
   {
-    image: arch7,
-    text: "AN AWARD-WINNING Architecture COMPANY FOR Architecture, ADDITIONS AND NEW BUILDS",
-    details: "Detailed information about the Architecture company.",
-  },
-  {
     image: arch5,
-    text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
-    details: "Detailed information about the real estate brokerage.",
-  },
-  {
-    image: arch6,
     text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
     details: "Detailed information about the real estate brokerage.",
   },
@@ -113,7 +101,6 @@ const Architecture = () => {
             style={{
               width: "100%",
               borderRadius: "8px",
-              // height: "300px",
               objectFit: "contain",
             }}
           />
@@ -129,11 +116,6 @@ const Architecture = () => {
         <Typography variant="h4" component="h2" gutterBottom>
           Some of Our Projects
         </Typography>
-        {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
-          <span style={{ color: "orange" }}>
-            Our comprehensive offering includes:
-          </span>
-        </Typography> */}
       </Box>
       <Grid
         container

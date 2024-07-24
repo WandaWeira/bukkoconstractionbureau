@@ -14,7 +14,7 @@ import {
 import EmailIcon from "@mui/icons-material/Email";
 import one from "../assets/one.png";
 import two from "../assets/two.png";
-import aboutsus from "../assets/aboutus.png";
+import aboutsus from "../assets/aboutus.jpg";
 
 const About = () => {
   const theme = useTheme();
@@ -32,33 +32,57 @@ const About = () => {
           <Grid item xs={12} md={6}>
             <Typography variant="body1" paragraph>
               <span style={{ fontWeight: "bold" }}>
-                Bukko Design and Construction Bureau Ltd
+                Bukko Design and Construction Bureau Ltd.
               </span>{" "}
-              is a leading firm known for its innovative designs and quality
-              construction. Starting as a small team with a vision to redefine
-              industry standards,{" "}
-              <span style={{ fontWeight: "bold" }}>Bukko </span>
-              quickly distinguished itself through its founders&#39; commitment
-              to excellence, expanding from residential and commercial projects
-              to industrial and public structures. Emphasizing creative yet
-              functional design, meticulous construction, client-centered
-              service, and sustainable practices,{" "}
-              <span style={{ fontWeight: "bold" }}>Bukko</span> has built a
-              reputation for delivering exceptional projects. Today, we continue
-              to push industry boundaries, creating spaces that inspire, endure,
-              and elevate everyday life.
+              is a leading firm renowned for its innovative designs and quality
+              construction. Originally starting as a small team with a vision to
+              redefine industry standards, Bukko quickly distinguished itself
+              through the founders' commitment to excellence. This dedication
+              enabled the company to expand its scope from residential and
+              commercial projects to include industrial and public structures as
+              well.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              Emphasizing creative yet functional design, Bukko integrates
+              aesthetics with practicality in every project. Their meticulous
+              construction methods ensure that each build meets the highest
+              standards of quality and safety. This approach has helped Bukko
+              build a reputation for delivering exceptional projects that not
+              only meet but exceed client expectations.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              Client-centered service is a cornerstone of Bukko’s philosophy.
+              They work closely with each client to understand their unique
+              needs and goals, ensuring that the final outcome aligns perfectly
+              with the client’s vision. Sustainable practices are also integral
+              to their operations, incorporating eco-friendly materials and
+              energy-efficient solutions to create environmentally responsible
+              structures.
+            </Typography>
+            <Typography variant="body1" paragraph>
+              Today, Bukko Design and Construction Bureau Ltd. continues to push
+              industry boundaries, staying at the forefront of design and
+              construction trends. Their unwavering commitment to innovation and
+              excellence allows them to create spaces that inspire, endure, and
+              elevate everyday life, solidifying their status as a leader in the
+              industry.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <img
               src={aboutsus}
               alt="Luxury Home"
-              style={{ width: "100%", borderRadius: "8px" }}
+              style={{
+                width: "100%",
+                borderRadius: "8px",
+                objectFit: "cover",
+                height: "90%",
+              }}
             />
           </Grid>
         </Grid>
 
-        <Grid container spacing={4} mb={8} sx={{ marginTop: "2rem" }}>
+        <Grid container spacing={4} mb={8} sx={{ marginTop: "6rem" }}>
           <Grid item xs={6} md={6} style={{ position: "relative" }}>
             <img src={one} alt="" style={{ width: "50%" }} />
             <span
@@ -152,7 +176,7 @@ const About = () => {
           // justifyContent: "center",
         }}
       >
-        <Grid item xs={6} md={6} style={{ position: "relative" }}>
+        <Grid item xs={6} md={6} style={{ position: "relative" }} mb={12}>
           <img src={two} alt="" style={{ width: "50%" }} />
           <span
             style={{
@@ -188,7 +212,7 @@ const About = () => {
           </Typography>
         </Grid>
       </Box>
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -226,7 +250,7 @@ const About = () => {
         >
           CONTACT US
         </Button>
-      </Box>
+      </Box> */}
     </>
   );
 };

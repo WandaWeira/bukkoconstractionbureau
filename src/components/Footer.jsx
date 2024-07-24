@@ -19,9 +19,10 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        bgcolor: "background.paper",
+        bgcolor: "#126984",
         p: 6,
-        marginTop: "2rem",
+        // marginTop: "2rem",
+        color: "#fff"
       }}
     >
       <Grid container spacing={4}>
