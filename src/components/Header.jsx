@@ -124,7 +124,7 @@ const Header = () => {
             <Button
               variant="outlined"
               component={Link}
-              to="/blog"
+              to="/contact"
               sx={{ borderColor: "#e8631d", color: "#e8631d" }}
             >
               CONTACT

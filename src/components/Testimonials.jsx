@@ -10,6 +10,7 @@ import {
   Typography,
   Button,
 } from "@mui/material";
+import { Link } from "react-router-dom";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import EmailIcon from "@mui/icons-material/Email";
@@ -197,23 +198,25 @@ const Testimonials = () => {
         <Typography variant="body1" gutterBottom sx={{ mt: 6, color: "#fff" }}>
           Would you like to ask us a question or do you need more information?
         </Typography>
-        <Button
-          variant="outlined"
-          startIcon={<EmailIcon />}
-          sx={{
-            mt: 6,
-            color: "#fff",
-            border: "1px solid white",
-            py: 3,
-            px: 5,
-            "&:hover": {
-              backgroundColor: "#eb6319", // Change background color to orange on hover
-              color: "#fff", // Text color remains white on hover
-            },
-          }}
-        >
-          CONTACT US
-        </Button>
+        <Link to="/contact">
+          <Button
+            variant="outlined"
+            startIcon={<EmailIcon />}
+            sx={{
+              mt: 6,
+              color: "#fff",
+              border: "1px solid white",
+              py: 3,
+              px: 5,
+              "&:hover": {
+                backgroundColor: "#eb6319", // Change background color to orange on hover
+                color: "#fff", // Text color remains white on hover
+              },
+            }}
+          >
+            CONTACT US
+          </Button>
+        </Link>
       </Box>
       {/* </Container> */}
     </>

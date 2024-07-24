@@ -6,12 +6,20 @@ const Overview = () => {
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{ mt: 8, backgroundColor: "#f6f6f6", p: 12 }}>
+    <Box sx={{ mt: 8, backgroundColor: "#f6f6f6", p: { xs: 3, md: 12 } }}>
+      <Typography
+        variant="h4"
+        sx={{ marginBottom: "3rem", textAlign: "center" }}
+      >
+        Overview
+      </Typography>
       <Grid container spacing={4} mb={8}>
-        <Grid item xs={12} md={6} sx={{ textAlign: "left" }}>
-          <Typography variant="h4" sx={{ marginBottom: "3rem" }}>
-            Overview
-          </Typography>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{ textAlign: { xs: "center", md: "left" } }}
+        >
           <Typography variant="body1" paragraph>
             Welcome to{" "}
             <span style={{ fontWeight: "bold" }}>

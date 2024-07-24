@@ -192,7 +192,7 @@ const tabData = [
           REMODELING
         </Typography>
         <Typography variant="body1" sx={{ marginBottom: "20px" }}>
-          Our remodelling services are tailored to your lifestyle and
+          Our remodeling services are tailored to your lifestyle and
           preferences. Whether it&#39;s a kitchen upgrade, bathroom makeover, or
           a complete home transformation, we focus on innovation, quality, and
           attention to detail. We work with you to create personalized spaces
@@ -224,13 +224,13 @@ const Services = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setTabIndex((prevIndex) => (prevIndex + 1) % tabData.length);
-  //   }, 5000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTabIndex((prevIndex) => (prevIndex + 1) % tabData.length);
+    }, 5000);
 
-  //   return () => clearInterval(interval);
-  // }, []);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <Box
@@ -248,10 +248,9 @@ const Services = () => {
         onChange={(e, newValue) => setTabIndex(newValue)}
         indicatorColor="none"
         textColor="primary"
-        centered
         sx={{
           marginBottom: "20px",
-          width: "100%", // Ensure the Tabs container spans the full width
+          width: "100%",
         }}
         variant={isSmallScreen ? "scrollable" : "fullWidth"}
         scrollButtons={isSmallScreen ? "auto" : false}
@@ -276,7 +275,7 @@ const Services = () => {
             alt={tabData[tabIndex].label}
             sx={{
               width: isSmallScreen ? "100%" : "60%",
-              height: isSmallScreen ? "500px" : "500px",
+              height: "auto",
               marginRight: isSmallScreen ? "0" : "20px",
               marginBottom: isSmallScreen ? "20px" : "0",
               borderRadius: "10px",

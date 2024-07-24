@@ -22,7 +22,7 @@ const Footer = () => {
         bgcolor: "#126984",
         p: 6,
         // marginTop: "2rem",
-        color: "#fff"
+        color: "#fff",
       }}
     >
       <Grid container spacing={4}>
@@ -182,7 +182,12 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Box sx={{ mt: 4, borderTop: "1px solid #ddd", pt: 2 }}>
-        <Typography variant="body2" color="textSecondary" align="center">
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          align="center"
+          sx={{ color: "#fff" }}
+        >
           © 2024 BUKKO DESIGN & CONSTRUCTION BUREAU, Privacy policy, Terms &
           Conditions
         </Typography>
