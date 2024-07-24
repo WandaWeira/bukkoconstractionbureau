@@ -29,26 +29,49 @@ const Footer = () => {
           <Typography variant="h6">
             BUKKO DESIGN & CONSTRUCTION BUREAU
           </Typography>
-          <Typography>
+          <Typography sx={{ display: "flex", flexDirection: "column" }}>
             Kisozi complex,
             <br />
             annex building, ground floor, rm 1
             <br />
             +256 782 500 843
             <br />
-            bukkoconstructionbureau@gmail.com | info@bukkoconstructionbureau.com
+            <Link
+              href="mailto:bukkoconstructionbureau@gmail.com"
+              sx={{ textDecoration: "none", color: "inherit", mb: 1 }}
+            >
+              bukkoconstructionbureau@gmail.com
+            </Link>
+            <Link
+              href="mailto:info@bukkoconstructionbureau.com"
+              sx={{ textDecoration: "none", color: "inherit", mb: 1 }}
+            >
+              info@bukkoconstructionbureau.com
+            </Link>
           </Typography>
           <Box sx={{ display: "flex", mt: 2 }}>
-            <Link href="https://ug.linkedin.com/company/bukko-design-and-construction-bureau?trk=similar-pages" target="_blank">
+            <Link
+              href="https://ug.linkedin.com/company/bukko-design-and-construction-bureau?trk=similar-pages"
+              target="_blank"
+            >
               <LinkedIn sx={{ mx: 0.5, color: "#126984" }} />
             </Link>
-            <Link href="https://www.facebook.com/Bukkoconstructionbureauug/" target="_blank">
+            <Link
+              href="https://www.facebook.com/Bukkoconstructionbureauug/"
+              target="_blank"
+            >
               <FacebookIcon sx={{ mx: 0.5, color: "#126984" }} />
             </Link>
-            <Link href="https://www.instagram.com/bukkoconstructionbureau?igsh=YTQwZjQ0NmI0OA==" target="_blank">
+            <Link
+              href="https://www.instagram.com/bukkoconstructionbureau?igsh=YTQwZjQ0NmI0OA=="
+              target="_blank"
+            >
               <InstagramIcon sx={{ mx: 0.5, color: "#126984" }} />
             </Link>
-            <Link href="https://www.tiktok.com/@bukkobureau?_t=8oBgWL2CwfG&amp;_r=1" target="_blank">
+            <Link
+              href="https://www.tiktok.com/@bukkobureau?_t=8oBgWL2CwfG&amp;_r=1"
+              target="_blank"
+            >
               <FontAwesomeIcon
                 icon={faTiktok}
                 style={{ margin: "0.5rem", marginTop: "5px", color: "#126984" }}
@@ -57,9 +80,15 @@ const Footer = () => {
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={3}>
-          <Typography variant="h6" gutterBottom>
-            ABOUT
-          </Typography>
+          <Link
+            href="/about"
+            sx={{ textDecoration: "none", color: "inherit", mb: 1 }}
+          >
+            <Typography variant="h6" gutterBottom>
+              ABOUT
+            </Typography>
+          </Link>
+
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             {/* <Link
               href="/blog"

@@ -70,7 +70,7 @@ const Architecture = () => {
   };
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ marginTop: "2.5rem" }}>
       <Box
         py={4}
         sx={{
@@ -80,55 +80,54 @@ const Architecture = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="h4" component="h1" gutterBottom>
-          ARCHITECTURAL SERVICES
-        </Typography>
-        <Typography
-          variant="h6"
-          component="h2"
-          color="textSecondary"
-          gutterBottom
-        >
-          HIGH-TOUCH <span style={{ color: "orange" }}>home care</span> FOR YOUR
-          PEACE OF MIND
+        <Typography variant="h3" component="h1" gutterBottom>
+          ARCHITECTURE
         </Typography>
       </Box>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="body1" paragraph>
-            As a full-spectrum property management firm, we offer personalized
-            luxury home management and maintenance services throughout the
-            Charleston, Bluffton, Hilton Head areas. We provide unparalleled
-            services including housekeeping, preventive maintenance, concierge
-            services, and more, including other essential services as requested
-            by the homeowner.
+            At Bukko Design and Construction Bureau Ltd., our architecture
+            services blend creativity with functionality to create innovative
+            and sustainable designs.
           </Typography>
           <Typography variant="body1" paragraph>
-            Whether your asset is beachfront along one of the lowcountry’s
-            sun-filled beaches, or behind the gates in the upscale community of
-            Palmetto Bluff, as owners ourselves, we appreciate the investment
-            you have made in your property. As such, we work to ensure all is
-            safe and maintained during your absence.
+            Our team of experienced architects works closely with clients to
+            understand their vision and translate it into thoughtfully crafted
+            spaces that are both aesthetically pleasing and highly functional.
+            From conceptual design and detailed planning to the final blueprint,
+            we ensure every project reflects our commitment to quality and
+            precision.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            Whether designing residential, commercial, or public spaces, we
+            prioritize integrating cutting-edge technology and sustainable
+            practices to deliver environments that are not only beautiful but
+            also environmentally responsible.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
           <img
             src={arch1}
             alt="Luxury Home"
-            style={{ width: "100%", borderRadius: "8px", height: "300px", objectFit: "cover" }}
+            style={{
+              width: "100%",
+              borderRadius: "8px",
+              // height: "300px",
+              objectFit: "contain",
+            }}
           />
         </Grid>
       </Grid>
 
       <Box
-        py={4}
+        py={8}
         textAlign="center"
         mt={8}
-        mb={8}
         sx={{ borderTop: "1px solid #333" }}
       >
-        <Typography variant="h5" component="h2" gutterBottom>
-          Our Projects
+        <Typography variant="h4" component="h2" gutterBottom>
+          Some of Our Projects
         </Typography>
         {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
           <span style={{ color: "orange" }}>

@@ -35,15 +35,17 @@ const Overview = () => {
           <Typography variant="body1" paragraph>
             Discover the <span style={{ fontWeight: "bold" }}>Bukko</span>{" "}
             difference – where every project is a masterpiece in the making.{" "}
-            <span style={{ fontWeight: "bold" }}>Bukko</span> Design and
-            Construction Bureau Ltd, Crafting Excellence Since Day One.
+            <span style={{ fontWeight: "bold" }}>
+              Bukko Design and Construction Bureau Ltd
+            </span>
+            , Crafting Excellence Since Day One.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
           <img
             src={one}
             alt="Luxury Home"
-            style={{ width: "100%", borderRadius: "8px", marginTop: "6rem" }}
+            style={{ width: "100%", borderRadius: "8px" }}
           />
         </Grid>
       </Grid>

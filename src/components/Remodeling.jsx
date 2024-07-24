@@ -59,7 +59,7 @@ const Remodeling = () => {
   };
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ marginTop: "2.5rem" }}>
       <Box
         py={4}
         sx={{
@@ -69,35 +69,33 @@ const Remodeling = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="h4" component="h1" gutterBottom>
-          REMODELING SERVICES
-        </Typography>
-        <Typography
-          variant="h6"
-          component="h2"
-          color="textSecondary"
-          gutterBottom
-        >
-          HIGH-TOUCH <span style={{ color: "orange" }}>home care</span> FOR YOUR
-          PEACE OF MIND
+        <Typography variant="h3" component="h1" gutterBottom>
+          REMODELING
         </Typography>
       </Box>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="body1" paragraph>
-            As a full-spectrum property management firm, we offer personalized
-            luxury home management and maintenance services throughout the
-            Charleston, Bluffton, Hilton Head areas. We provide unparalleled
-            services including housekeeping, preventive maintenance, concierge
-            services, and more, including other essential services as requested
-            by the homeowner.
+            At Bukko Design and Construction Bureau Ltd., our remodeling
+            services are designed to bring your unique vision to life,
+            transforming existing spaces into personalized, functional, and
+            stylish environments. We handle all aspects of remodeling, from
+            conceptual design and planning to construction and finishing
+            touches, ensuring a seamless and stress-free experience for our
+            clients.
           </Typography>
           <Typography variant="body1" paragraph>
-            Whether your asset is beachfront along one of the lowcountry’s
-            sun-filled beaches, or behind the gates in the upscale community of
-            Palmetto Bluff, as owners ourselves, we appreciate the investment
-            you have made in your property. As such, we work to ensure all is
-            safe and maintained during your absence.
+            Whether it's a kitchen makeover, bathroom upgrade, or a complete
+            home transformation, our skilled team focuses on innovation,
+            quality, and attention to detail. By blending modern design trends
+            with your specific preferences, we create spaces that not only meet
+            but exceed your expectations, enhancing both the beauty and value of
+            your property.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            By blending modern design trends with your specific preferences, we
+            create spaces that not only meet but exceed your expectations,
+            enhancing both the beauty and value of your property.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -110,14 +108,13 @@ const Remodeling = () => {
       </Grid>
 
       <Box
-        py={4}
+        py={8}
         textAlign="center"
         mt={8}
-        mb={8}
         sx={{ borderTop: "1px solid #333" }}
       >
-        <Typography variant="h5" component="h2" gutterBottom>
-          Our Projects
+        <Typography variant="h4" component="h2" gutterBottom>
+          Some of Our Projects
         </Typography>
         {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
           <span style={{ color: "orange" }}>
@@ -140,7 +137,12 @@ const Remodeling = () => {
               <img
                 src={service.image}
                 alt="Service"
-                style={{ width: "100%", borderRadius: "8px", height: "300px", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  borderRadius: "8px",
+                  height: "300px",
+                  objectFit: "cover",
+                }}
               />
               <Box
                 style={{

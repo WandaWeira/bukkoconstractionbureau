@@ -51,7 +51,7 @@ const Header = () => {
             alt="logo"
             style={{
               width: "100px",
-              height: "80px",
+              height: "100%",
               objectFit: "cover",
               marginBottom: "20px",
             }}
@@ -69,8 +69,8 @@ const Header = () => {
                 fontSize: {
                   xs: "20px",
                   sm: "20px",
-                  md: "1rem",
-                  lg: "1.2rem",
+                  md: "1.5rem",
+                  lg: "2rem",
                 }, // Responsive font size
                 fontWeight: { xs: "normal", sm: "bold" }, // Optional: Adjust font weight
               }}
@@ -97,7 +97,12 @@ const Header = () => {
               PaperProps={{ sx: { minWidth: 200 } }} // Adjust width as needed
             >
               {navItems.map((item) => (
-                <MenuItem component={Link} to={item.path} onClick={handleClose} key={item.text}>
+                <MenuItem
+                  component={Link}
+                  to={item.path}
+                  onClick={handleClose}
+                  key={item.text}
+                >
                   {item.text}
                 </MenuItem>
               ))}

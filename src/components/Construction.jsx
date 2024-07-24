@@ -60,7 +60,7 @@ const Construction = () => {
   };
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{ marginTop: "2.5rem" }}>
       <Box
         py={4}
         sx={{
@@ -70,35 +70,29 @@ const Construction = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="h4" component="h1" gutterBottom>
-          LUXURY SIMPLIFIED HOME SERVICES
-        </Typography>
-        <Typography
-          variant="h6"
-          component="h2"
-          color="textSecondary"
-          gutterBottom
-        >
-          HIGH-TOUCH <span style={{ color: "orange" }}>home care</span> FOR YOUR
-          PEACE OF MIND
+        <Typography variant="h3" component="h1" gutterBottom>
+          CONSTRUCTION
         </Typography>
       </Box>
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="body1" paragraph>
-            As a full-spectrum property management firm, we offer personalized
-            luxury home management and maintenance services throughout the
-            Charleston, Bluffton, Hilton Head areas. We provide unparalleled
-            services including housekeeping, preventive maintenance, concierge
-            services, and more, including other essential services as requested
-            by the homeowner.
+            At Bukko Design and Construction Bureau Ltd., our construction
+            services are defined by precision, quality, and a client-centric
+            approach. We manage every aspect of the building process, from
+            initial planning and permitting to final inspections and project
+            handover.
           </Typography>
           <Typography variant="body1" paragraph>
-            Whether your asset is beachfront along one of the lowcountry’s
-            sun-filled beaches, or behind the gates in the upscale community of
-            Palmetto Bluff, as owners ourselves, we appreciate the investment
-            you have made in your property. As such, we work to ensure all is
-            safe and maintained during your absence.
+            Our team of skilled professionals ensures that each project is
+            executed with meticulous attention to detail, adhering to the
+            highest standards of safety and craftsmanship.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            Whether constructing new commercial buildings, residential homes, or
+            industrial facilities, we deliver exceptional results on time and
+            within budget, transforming visions into enduring structures that
+            inspire and function seamlessly.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -111,14 +105,13 @@ const Construction = () => {
       </Grid>
 
       <Box
-        py={4}
+        py={8}
         textAlign="center"
         mt={8}
-        mb={8}
         sx={{ borderTop: "1px solid #333" }}
       >
-        <Typography variant="h5" component="h2" gutterBottom>
-          Our Projects
+        <Typography variant="h4" component="h2" gutterBottom>
+          Some of Our Projects
         </Typography>
         {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
           <span style={{ color: "orange" }}>
@@ -141,7 +134,12 @@ const Construction = () => {
               <img
                 src={service.image}
                 alt="Service"
-                style={{ width: "100%", borderRadius: "8px", height: "300px", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  borderRadius: "8px",
+                  height: "300px",
+                  objectFit: "cover",
+                }}
               />
               <Box
                 style={{

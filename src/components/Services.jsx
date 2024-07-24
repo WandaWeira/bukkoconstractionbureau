@@ -224,13 +224,13 @@ const Services = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTabIndex((prevIndex) => (prevIndex + 1) % tabData.length);
-    }, 5000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setTabIndex((prevIndex) => (prevIndex + 1) % tabData.length);
+  //   }, 5000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <Box
@@ -275,7 +275,7 @@ const Services = () => {
             src={tabData[tabIndex].contentImage}
             alt={tabData[tabIndex].label}
             sx={{
-              width: isSmallScreen ? "100%" : "80%",
+              width: isSmallScreen ? "100%" : "60%",
               height: isSmallScreen ? "500px" : "500px",
               marginRight: isSmallScreen ? "0" : "20px",
               marginBottom: isSmallScreen ? "20px" : "0",

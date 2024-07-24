@@ -49,7 +49,7 @@ const testimonials = [
     title: "Topline Investments Ltd.",
     avatar: "",
     content:
-      "Partnering with Bukko Design and Construction Bureau Ltd. for our commercial projects in Uganda has been a remarkable experience. Their architectural designs have brought a new level of sophistication and functionality to our developments. Bukko&#39;s innovative approach and keen understanding of our needs have resulted in designs that not only meet but exceed our expectations. Their commitment to excellence and attention to detail have been instrumental in the success of our projects. We highly recommend Bukko for their outstanding architectural expertise and dedication to delivering top-quality results.",
+      "Partnering with Bukko Design and Construction Bureau Ltd. for our commercial projects in Uganda has been a remarkable experience. Their architectural designs have brought a new level of sophistication and functionality to our developments. Bukko's innovative approach and keen understanding of our needs have resulted in designs that not only meet but exceed our expectations. Their commitment to excellence and attention to detail have been instrumental in the success of our projects. We highly recommend Bukko for their outstanding architectural expertise and dedication to delivering top-quality results.",
   },
 ];
 

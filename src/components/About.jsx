@@ -14,16 +14,16 @@ import {
 import EmailIcon from "@mui/icons-material/Email";
 import one from "../assets/one.png";
 import two from "../assets/two.png";
-// import three from "../assets/three.png";
+import aboutsus from "../assets/aboutus.png";
 
 const About = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   return (
     <>
-      <Container maxWidth="lg">
+      <Container maxWidth="lg" sx={{ marginTop: "2.5rem" }}>
         <Box py={4} textAlign="center">
-          <Typography variant="h3" component="h2" gutterBottom>
+          <Typography variant="h2" component="h2" gutterBottom>
             About us
           </Typography>
         </Box>
@@ -37,7 +37,7 @@ const About = () => {
               is a leading firm known for its innovative designs and quality
               construction. Starting as a small team with a vision to redefine
               industry standards,{" "}
-              <span style={{ fontWeight: "bold" }}>Bukko</span>
+              <span style={{ fontWeight: "bold" }}>Bukko </span>
               quickly distinguished itself through its founders&#39; commitment
               to excellence, expanding from residential and commercial projects
               to industrial and public structures. Emphasizing creative yet
@@ -51,14 +51,14 @@ const About = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <img
-              src="https://images.unsplash.com/photo-1721403715005-cd5df8ab90ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8"
+              src={aboutsus}
               alt="Luxury Home"
               style={{ width: "100%", borderRadius: "8px" }}
             />
           </Grid>
         </Grid>
 
-        <Grid container spacing={4} mb={8}>
+        <Grid container spacing={4} mb={8} sx={{ marginTop: "2rem" }}>
           <Grid item xs={6} md={6} style={{ position: "relative" }}>
             <img src={one} alt="" style={{ width: "50%" }} />
             <span
