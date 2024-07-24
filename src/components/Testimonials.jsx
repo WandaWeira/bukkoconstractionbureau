@@ -117,6 +117,7 @@ const Testimonials = () => {
                         mx: "auto",
                         mb: 2,
                         border: "2px solid #FFA000",
+                        objectFit: "cover",
                       }}
                     />
                     <Typography

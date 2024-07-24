@@ -237,9 +237,7 @@ const Services = () => {
       sx={{
         textAlign: "center",
         padding: "20px",
-        // marginTop: "5rem",
         marginBottom: "5rem",
-        // backgroundColor: "#f6f6f6",
       }}
     >
       <Typography variant="h4" sx={{ marginBottom: "3rem" }}>
@@ -256,7 +254,7 @@ const Services = () => {
           width: "100%", // Ensure the Tabs container spans the full width
         }}
         variant={isSmallScreen ? "scrollable" : "fullWidth"}
-        scrollButtons={isSmallScreen ? "auto" : "off"}
+        scrollButtons={isSmallScreen ? "auto" : false}
       >
         {tabData.map((tab, index) => (
           <StyledTab key={index} label={tab.label} image={tab.tabImage} />
@@ -268,10 +266,8 @@ const Services = () => {
             display: "flex",
             flexDirection: isSmallScreen ? "column" : "row",
             justifyContent: "space-between",
-            // alignItems: "center",
             textAlign: "left",
             padding: "20px",
-            // mt: "100px",
           }}
         >
           <Box
@@ -288,7 +284,6 @@ const Services = () => {
               objectFit: "cover",
             }}
           />
-
           <Box sx={{ width: isSmallScreen ? "100%" : "50%" }}>
             {tabData[tabIndex].content}
           </Box>

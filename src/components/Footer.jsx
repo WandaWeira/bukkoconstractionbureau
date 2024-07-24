@@ -11,6 +11,8 @@ import {
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import { LinkedIn } from "@mui/icons-material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -37,14 +39,20 @@ const Footer = () => {
             bukkoconstructionbureau@gmail.com | info@bukkoconstructionbureau.com
           </Typography>
           <Box sx={{ display: "flex", mt: 2 }}>
-            <Link href="https://ug.linkedin.com/company/bukko-design-and-construction-bureau?trk=similar-pages">
-              <LinkedIn sx={{ mx: 0.5 }} />
+            <Link href="https://ug.linkedin.com/company/bukko-design-and-construction-bureau?trk=similar-pages" target="_blank">
+              <LinkedIn sx={{ mx: 0.5, color: "#126984" }} />
             </Link>
-            <Link href="https://www.facebook.com/Bukkoconstructionbureauug/">
-              <FacebookIcon sx={{ mx: 0.5 }} />
+            <Link href="https://www.facebook.com/Bukkoconstructionbureauug/" target="_blank">
+              <FacebookIcon sx={{ mx: 0.5, color: "#126984" }} />
             </Link>
-            <Link href="https://www.instagram.com/bukkoconstructionbureau?igsh=YTQwZjQ0NmI0OA==">
-              <InstagramIcon sx={{ mx: 0.5 }} />
+            <Link href="https://www.instagram.com/bukkoconstructionbureau?igsh=YTQwZjQ0NmI0OA==" target="_blank">
+              <InstagramIcon sx={{ mx: 0.5, color: "#126984" }} />
+            </Link>
+            <Link href="https://www.tiktok.com/@bukkobureau?_t=8oBgWL2CwfG&amp;_r=1" target="_blank">
+              <FontAwesomeIcon
+                icon={faTiktok}
+                style={{ margin: "0.5rem", marginTop: "5px", color: "#126984" }}
+              />
             </Link>
           </Box>
         </Grid>
@@ -129,7 +137,13 @@ const Footer = () => {
               <Button
                 variant="contained"
                 color="primary"
-                sx={{ backgroundColor: "orange", color: "#fff" }}
+                sx={{
+                  backgroundColor: "orange",
+                  color: "#fff",
+                  "&:hover": {
+                    backgroundColor: "#126984",
+                  },
+                }}
               >
                 LET'S TALK
               </Button>
