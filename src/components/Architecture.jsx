@@ -20,23 +20,23 @@ import arch5 from "../assets/architecture5.jpg";
 const services = [
   {
     image: arch2,
-    text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
-    details: "Detailed information about the home maintenance service.",
+    // text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
+    // details: "Detailed information about the home maintenance service.",
   },
   {
     image: arch3,
-    text: "A VACATION CONCIERGE TO ENSURE YOUR HOME IS READY FOR YOUR ARRIVAL AND TO LEND A HAND DURING YOUR STAY",
-    details: "Detailed information about the vacation concierge service.",
+    // text: "A VACATION CONCIERGE TO ENSURE YOUR HOME IS READY FOR YOUR ARRIVAL AND TO LEND A HAND DURING YOUR STAY",
+    // details: "Detailed information about the vacation concierge service.",
   },
   {
     image: arch5,
-    text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
-    details: "Detailed information about the real estate brokerage.",
+    // text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
+    // details: "Detailed information about the real estate brokerage.",
   },
   {
     image: arch4,
-    text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
-    details: "Detailed information about the real estate brokerage.",
+    // text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
+    // details: "Detailed information about the real estate brokerage.",
   },
 ];
 
@@ -68,7 +68,19 @@ const Architecture = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="h3" component="h1" gutterBottom>
+        <Typography
+          variant="h3"
+          component="h1"
+          gutterBottom
+          sx={{
+            fontSize: {
+              xs: "2rem", // font size for extra-small screens (mobile)
+              sm: "3rem", // font size for small screens (tablets)
+              md: "3rem", // font size for medium screens (small laptops)
+              lg: "3rem", // font size for large screens (desktops)
+            },
+          }}
+        >
           ARCHITECTURE
         </Typography>
       </Box>
@@ -134,25 +146,6 @@ const Architecture = () => {
                 alt="Service"
                 style={{ width: "100%", borderRadius: "8px" }}
               />
-              <Box
-                style={{
-                  position: "absolute",
-                  top: "50%",
-                  left: "50%",
-                  transform: "translate(-50%, -50%)",
-                  backgroundColor: "rgba(255, 255, 255, 0.8)",
-                  padding: isSmallScreen ? "8px" : "16px",
-                  borderRadius: "8px",
-                  textAlign: "center",
-                }}
-              >
-                <Typography
-                  variant="body2"
-                  style={{ fontSize: isSmallScreen ? "0.8rem" : "1rem" }}
-                >
-                  {service.text}
-                </Typography>
-              </Box>
             </Paper>
           </Grid>
         ))}
@@ -174,7 +167,7 @@ const Architecture = () => {
               top: "50%",
               left: "50%",
               transform: "translate(-50%, -50%)",
-              width: isSmallScreen ? 300 : 500,
+              width: isSmallScreen ? "90%" : 500,
               bgcolor: "background.paper",
               border: "2px solid #000",
               boxShadow: 24,

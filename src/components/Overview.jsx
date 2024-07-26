@@ -8,7 +8,8 @@ const Overview = () => {
   return (
     <Box sx={{ mt: 8, backgroundColor: "#f6f6f6", p: { xs: 3, md: 12 } }}>
       <Typography
-        variant="h4"
+        variant="h3"
+        component="h1"
         sx={{ marginBottom: "3rem", textAlign: "center" }}
       >
         Overview
@@ -23,30 +24,40 @@ const Overview = () => {
           <Typography variant="body1" paragraph>
             Welcome to{" "}
             <span style={{ fontWeight: "bold" }}>
-              Bukko Design and Construction Bureau Ltd
+              Bukko Design and Construction Bureau Ltd.
             </span>
-            ., where innovation meets craftsmanship. With a legacy of excellence
-            in architecture, construction, renovations, and remodeling, we are
-            dedicated to transforming your vision into reality.
+            , where innovation meets craftsmanship. With a rich legacy of
+            excellence in architecture, construction, renovations, and
+            remodeling, we are dedicated to transforming your vision into
+            reality. Our commitment to quality and client satisfaction sets us
+            apart in every project we undertake.
           </Typography>
           <Typography variant="body1" paragraph>
             Our expert team combines creative design, meticulous planning, and
-            superior construction techniques to deliver exceptional results for
-            residential, commercial, and industrial projects. At{" "}
-            <span style={{ fontWeight: "bold" }}>Bukko</span>, we pride
-            ourselves on our holistic approach, ensuring seamless integration of
-            aesthetic appeal and functional excellence. Whether building your
-            dream home, renovating a space, or undertaking a large-scale
-            commercial development, our commitment to quality and client
-            satisfaction sets us apart.
+            superior construction techniques to deliver exceptional results.
+            Whether working on residential, commercial, or industrial projects,
+            we ensure seamless integration of aesthetic appeal and functional
+            excellence. At <span style={{ fontWeight: "bold" }}>Bukko</span>, we
+            pride ourselves on our holistic approach, making sure every detail
+            is thoughtfully considered.
+          </Typography>
+          <Typography variant="body1" paragraph>
+            From building your dream home to renovating a cherished space or
+            embarking on a large-scale commercial development,{" "}
+            <span style={{ fontWeight: "bold" }}>Bukko</span> is your trusted
+            partner. Our dedication to crafting excellence ensures that every
+            project is handled with the utmost care and professionalism,
+            reflecting our passion for perfection.
           </Typography>
           <Typography variant="body1" paragraph>
             Discover the <span style={{ fontWeight: "bold" }}>Bukko</span>{" "}
             difference – where every project is a masterpiece in the making.{" "}
             <span style={{ fontWeight: "bold" }}>
-              Bukko Design and Construction Bureau Ltd
+              Bukko Design and Construction Bureau Ltd.
             </span>
-            , Crafting Excellence Since Day One.
+            , crafting excellence since day one. Experience the artistry and
+            precision that have defined our legacy, and let us help you bring
+            your dreams to life.
           </Typography>
         </Grid>
         <Grid item xs={12} md={6}>

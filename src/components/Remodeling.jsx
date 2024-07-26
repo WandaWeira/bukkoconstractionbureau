@@ -21,23 +21,23 @@ import remodeling from "../assets/remodeling.jpeg";
 const services = [
   {
     image: remodel1,
-    text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
-    details: "Detailed information about the home maintenance service.",
+    // text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
+    // details: "Detailed information about the home maintenance service.",
   },
   {
     image: remodel2,
-    text: "A VACATION CONCIERGE TO ENSURE YOUR HOME IS READY FOR YOUR ARRIVAL AND TO LEND A HAND DURING YOUR STAY",
-    details: "Detailed information about the vacation concierge service.",
+    // text: "A VACATION CONCIERGE TO ENSURE YOUR HOME IS READY FOR YOUR ARRIVAL AND TO LEND A HAND DURING YOUR STAY",
+    // details: "Detailed information about the vacation concierge service.",
   },
   {
     image: remodel3,
-    text: "AN AWARD-WINNING Remodeling COMPANY FOR Remodeling, ADDITIONS AND NEW BUILDS",
-    details: "Detailed information about the Remodeling company.",
+    // text: "AN AWARD-WINNING Remodeling COMPANY FOR Remodeling, ADDITIONS AND NEW BUILDS",
+    // details: "Detailed information about the Remodeling company.",
   },
   {
     image: remodel4,
-    text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
-    details: "Detailed information about the real estate brokerage.",
+    // text: "A LICENSED REAL ESTATE BROKERAGE TO WORK WITH YOU SHOULD YOUR REAL ESTATE NEEDS CHANGE",
+    // details: "Detailed information about the real estate brokerage.",
   },
 ];
 
@@ -69,7 +69,19 @@ const Remodeling = () => {
           alignItems: "center",
         }}
       >
-        <Typography variant="h3" component="h1" gutterBottom>
+        <Typography
+          variant="h3"
+          component="h1"
+          gutterBottom
+          sx={{
+            fontSize: {
+              xs: "2rem", // font size for extra-small screens (mobile)
+              sm: "3rem", // font size for small screens (tablets)
+              md: "3rem", // font size for medium screens (small laptops)
+              lg: "3rem", // font size for large screens (desktops)
+            },
+          }}
+        >
           REMODELING
         </Typography>
       </Box>
@@ -116,11 +128,6 @@ const Remodeling = () => {
         <Typography variant="h4" component="h2" gutterBottom>
           Some of Our Projects
         </Typography>
-        {/* <Typography variant="subtitle1" color="textSecondary" gutterBottom>
-          <span style={{ color: "orange" }}>
-            Our comprehensive offering includes:
-          </span>
-        </Typography> */}
       </Box>
       <Grid
         container
@@ -144,7 +151,7 @@ const Remodeling = () => {
                   objectFit: "cover",
                 }}
               />
-              <Box
+              {/* <Box
                 style={{
                   position: "absolute",
                   top: "50%",
@@ -162,7 +169,7 @@ const Remodeling = () => {
                 >
                   {service.text}
                 </Typography>
-              </Box>
+              </Box> */}
             </Paper>
           </Grid>
         ))}

@@ -238,9 +238,10 @@ const Services = () => {
         textAlign: "center",
         padding: "20px",
         marginBottom: "5rem",
+        marginTop: "2.5rem",
       }}
     >
-      <Typography variant="h4" sx={{ marginBottom: "3rem" }}>
+      <Typography variant="h3" sx={{ marginBottom: "3rem" }}>
         Our Expertise:
       </Typography>
       <Tabs
@@ -275,7 +276,8 @@ const Services = () => {
             alt={tabData[tabIndex].label}
             sx={{
               width: isSmallScreen ? "100%" : "60%",
-              height: "auto",
+              height: isSmallScreen ? "300px" : "500px",
+              // height: "500px",
               marginRight: isSmallScreen ? "0" : "20px",
               marginBottom: isSmallScreen ? "20px" : "0",
               borderRadius: "10px",

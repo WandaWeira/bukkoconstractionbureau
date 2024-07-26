@@ -15,13 +15,13 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import EmailIcon from "@mui/icons-material/Email";
 import Logo1 from "../assets/seyani.jpg";
-import Logo2 from "../assets/CATIC.png";
-import Logo3 from "../assets/FB_IMG_1678698681858.jpg";
-import Logo4 from "../assets/FB_IMG_1678698974581.jpg";
-import Logo5 from "../assets/polad-uganda-logo.jpg";
+// import Logo2 from "../assets/CATIC.png";
+// import Logo3 from "../assets/FB_IMG_1678698681858.jpg";
+// import Logo4 from "../assets/FB_IMG_1678698974581.jpg";
+// import Logo5 from "../assets/polad-uganda-logo.jpg";
 import Logo6 from "../assets/royallogo.png";
-import Logo7 from "../assets/state_house.png";
-import Logo8 from "../assets/TALI LogoFinal_RGB.jpg";
+// import Logo7 from "../assets/state_house.png";
+// import Logo8 from "../assets/TALI LogoFinal_RGB.jpg";
 
 const testimonials = [
   {
@@ -96,7 +96,7 @@ const Testimonials = () => {
           </Typography>
           <Box position="relative" width="100%">
             <Grid container justifyContent="center">
-              <Grid item xs={12} sm={8} md={6}>
+              <Grid item xs={12} sm={10} md={8} lg={6}>
                 <Card
                   sx={{
                     backgroundColor: "rgba(255, 255, 255, 0.1)",
@@ -105,7 +105,7 @@ const Testimonials = () => {
                     borderRadius: "16px",
                     color: "#FFFFFF",
                     padding: "20px",
-                    mt: 8,
+                    mt: 4,
                   }}
                 >
                   <CardContent>
@@ -123,9 +123,8 @@ const Testimonials = () => {
                     />
                     <Typography
                       variant="body2"
-                      // align="center"
                       gutterBottom
-                      sx={{ color: " #333", fontStyle: "italic" }}
+                      sx={{ color: "#333", fontStyle: "italic" }}
                     >
                       {testimonials[currentIndex].content}
                     </Typography>
@@ -141,7 +140,7 @@ const Testimonials = () => {
                       variant="body2"
                       align="center"
                       gutterBottom
-                      sx={{ color: " #333" }}
+                      sx={{ color: "#333" }}
                     >
                       {testimonials[currentIndex].title}
                     </Typography>
@@ -154,7 +153,7 @@ const Testimonials = () => {
               sx={{
                 position: "absolute",
                 top: "50%",
-                left: "10px",
+                left: { xs: "5px", sm: "10px" },
                 transform: "translateY(-50%)",
                 color: "#333",
               }}
@@ -166,7 +165,7 @@ const Testimonials = () => {
               sx={{
                 position: "absolute",
                 top: "50%",
-                right: "10px",
+                right: { xs: "5px", sm: "10px" },
                 transform: "translateY(-50%)",
                 color: "#333",
               }}
@@ -176,13 +175,11 @@ const Testimonials = () => {
           </Box>
         </Container>
       </Box>
-      {/* <Container maxWidth="sm"> */}
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          // textAlign: "center",
           py: 8,
           backgroundColor: "#2E2E2E",
         }}
@@ -209,8 +206,8 @@ const Testimonials = () => {
               py: 3,
               px: 5,
               "&:hover": {
-                backgroundColor: "#eb6319", // Change background color to orange on hover
-                color: "#fff", // Text color remains white on hover
+                backgroundColor: "#eb6319",
+                color: "#fff",
               },
             }}
           >
@@ -218,7 +215,6 @@ const Testimonials = () => {
           </Button>
         </Link>
       </Box>
-      {/* </Container> */}
     </>
   );
 };
