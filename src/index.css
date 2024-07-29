@@ -5,3 +5,10 @@ body{
 p{
     text-align: justify;
 }
+
+/* Override for mobile screens */
+@media (max-width: 600px) {
+    p {
+        text-align: left; /* or any other alignment you prefer */
+    }
+}

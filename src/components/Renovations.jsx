@@ -90,7 +90,7 @@ const Renovations = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="body1" paragraph>
-            At Bukko Design and Construction Bureau Ltd., our renovation
+            At <span style={{fontWeight: "bold"}}>Bukko Design and Construction Bureau Ltd</span>., our renovation
             services are dedicated to revitalizing and transforming spaces to
             meet our clients' evolving needs. We specialize in upgrading
             outdated or inefficient areas into modern, functional, and

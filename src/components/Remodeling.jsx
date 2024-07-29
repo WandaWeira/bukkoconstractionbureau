@@ -91,10 +91,13 @@ const Remodeling = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="body1" paragraph>
-            At Bukko Design and Construction Bureau Ltd., our remodeling
-            services are designed to bring your unique vision to life,
-            transforming existing spaces into personalized, functional, and
-            stylish environments. We handle all aspects of remodeling, from
+            At{" "}
+            <span style={{ fontWeight: "bold" }}>
+              Bukko Design and Construction Bureau Ltd
+            </span>
+            ., our remodeling services are designed to bring your unique vision
+            to life, transforming existing spaces into personalized, functional,
+            and stylish environments. We handle all aspects of remodeling, from
             conceptual design and planning to construction and finishing
             touches, ensuring a seamless and stress-free experience for our
             clients.

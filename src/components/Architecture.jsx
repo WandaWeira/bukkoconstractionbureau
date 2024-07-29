@@ -90,9 +90,12 @@ const Architecture = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="body1" paragraph>
-            At Bukko Design and Construction Bureau Ltd., our architecture
-            services blend creativity with functionality to create innovative
-            and sustainable designs.
+            At{" "}
+            <span style={{ fontWeight: "bold" }}>
+              Bukko Design and Construction Bureau Ltd
+            </span>
+            ., our architecture services blend creativity with functionality to
+            create innovative and sustainable designs.
           </Typography>
           <Typography variant="body1" paragraph>
             Our team of experienced architects works closely with clients to

@@ -1,15 +1,55 @@
 import React from "react";
-import {
-  Container,
-  Typography,
-  Box,
-  Grid,
-  useTheme,
-  useMediaQuery,
-} from "@mui/material";
+import { Typography, Box, Grid, useTheme, useMediaQuery } from "@mui/material";
+import { styled } from "@mui/system";
 import aboutsus from "../assets/aboutus.jpg";
 import one from "../assets/one.png";
 import two from "../assets/two.png";
+import three from "../assets/three.png";
+
+const MissionSpan = styled("span")(({ theme }) => ({
+  position: "absolute",
+  top: "25%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  fontWeight: "bold",
+  padding: "5px",
+  color: "#fff",
+  fontSize: "1.5rem",
+  textAlign: "center",
+  [theme.breakpoints.down("sm")]: {
+    top: "17%",
+  },
+}));
+
+const ValuesSpan = styled("span")(({ theme }) => ({
+  position: "absolute",
+  top: "35%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  fontWeight: "bold",
+  padding: "5px",
+  color: "#fff",
+  fontSize: "1.5rem",
+  textAlign: "center",
+  [theme.breakpoints.down("sm")]: {
+    top: "28%",
+  },
+}));
+
+const VisionSpan = styled("span")(({ theme }) => ({
+  position: "absolute",
+  top: "25%",
+  left: "55%",
+  transform: "translate(-50%, -50%)",
+  fontWeight: "bold",
+  padding: "5px",
+  color: "#fff",
+  fontSize: "1.5rem",
+  textAlign: "center",
+  [theme.breakpoints.down("sm")]: {
+    top: "25%",
+  },
+}));
 
 const About = () => {
   const theme = useTheme();
@@ -39,22 +79,26 @@ const About = () => {
               </span>{" "}
               is a leading firm renowned for its innovative designs and quality
               construction. Originally starting as a small team with a vision to
-              redefine industry standards, <span  style={{ fontWeight: "bold" }}>Bukko</span> quickly distinguished itself
-              through the founders' commitment to excellence. This dedication
-              enabled the company to expand its scope from residential and
-              commercial projects to include industrial and public structures as
-              well.
+              redefine industry standards,{" "}
+              <span style={{ fontWeight: "bold" }}>Bukko</span> quickly
+              distinguished itself through the founders' commitment to
+              excellence. This dedication enabled the company to expand its
+              scope from residential and commercial projects to include
+              industrial and public structures as well.
             </Typography>
             <Typography variant="body1" paragraph>
-              Emphasizing creative yet functional design, <span  style={{ fontWeight: "bold" }}>Bukko</span> integrates
+              Emphasizing creative yet functional design,{" "}
+              <span style={{ fontWeight: "bold" }}>Bukko</span> integrates
               aesthetics with practicality in every project. Their meticulous
               construction methods ensure that each build meets the highest
-              standards of quality and safety. This approach has helped <span  style={{ fontWeight: "bold" }}>Bukko</span>
+              standards of quality and safety. This approach has helped{" "}
+              <span style={{ fontWeight: "bold" }}>Bukko </span>
               build a reputation for delivering exceptional projects that not
               only meet but exceed client expectations.
             </Typography>
             <Typography variant="body1" paragraph>
-              Client-centered service is a cornerstone of <span  style={{ fontWeight: "bold" }}>Bukko's</span> philosophy.
+              Client-centered service is a cornerstone of{" "}
+              <span style={{ fontWeight: "bold" }}>Bukko's</span> philosophy.
               They work closely with each client to understand their unique
               needs and goals, ensuring that the final outcome aligns perfectly
               with the client's vision. Sustainable practices are also integral
@@ -63,12 +107,15 @@ const About = () => {
               structures.
             </Typography>
             <Typography variant="body1" paragraph>
-              Today, <span  style={{ fontWeight: "bold" }}>Bukko Design and Construction Bureau Ltd</span>. continues to push
-              industry boundaries, staying at the forefront of design and
-              construction trends. Their unwavering commitment to innovation and
-              excellence allows them to create spaces that inspire, endure, and
-              elevate everyday life, solidifying their status as a leader in the
-              industry.
+              Today,{" "}
+              <span style={{ fontWeight: "bold" }}>
+                Bukko Design and Construction Bureau Ltd
+              </span>
+              . continues to push industry boundaries, staying at the forefront
+              of design and construction trends. Their unwavering commitment to
+              innovation and excellence allows them to create spaces that
+              inspire, endure, and elevate everyday life, solidifying their
+              status as a leader in the industry.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -108,21 +155,7 @@ const About = () => {
         >
           <Grid item xs={12} sm={12} md={6} style={{ position: "relative" }}>
             <img src={one} alt="Our Mission" style={{ borderRadius: "8px" }} />
-            <span
-              style={{
-                position: "absolute",
-                top: "20%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                fontWeight: "bold",
-                padding: "5px",
-                color: "#fff",
-                fontSize: "1.5rem",
-                textAlign: "center",
-              }}
-            >
-              Our Mission
-            </span>
+            <MissionSpan>Our Mission</MissionSpan>
             <Typography variant="body1" paragraph sx={{ mt: 2 }}>
               At{" "}
               <span style={{ fontWeight: "bold" }}>
@@ -147,21 +180,7 @@ const About = () => {
             mb={12}
           >
             <img src={two} alt="Our Values" style={{ borderRadius: "8px" }} />
-            <span
-              style={{
-                position: "absolute",
-                top: "35%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                fontWeight: "bold",
-                padding: "5px",
-                color: "#fff",
-                fontSize: "1.5rem",
-                textAlign: "center",
-              }}
-            >
-              Our Values
-            </span>
+            <ValuesSpan>Our Values</ValuesSpan>
             <Typography
               variant="body1"
               paragraph
@@ -172,32 +191,20 @@ const About = () => {
                 mt: 2,
               }}
             >
-              <span style={{ fontWeight: "bold" }}>"IQSITE"</span> aligns with
-              Bukko Design and Construction Bureau&#39;s commitment to{" "}
-              <span style={{ fontWeight: "bold" }}>
-                Innovation, Quality, Sustainability, Integrity, Excellence, and
-                Teamwork,
-              </span>
+              <p>
+                <span style={{ fontWeight: "bold" }}>"IQSITE"</span> aligns with
+                Bukko Design and Construction Bureau's commitment to{" "}
+                <span style={{ fontWeight: "bold" }}>
+                  Innovation, Quality, Sustainability, Integrity, Excellence,
+                  and Teamwork,
+                </span>
+              </p>
             </Typography>
           </Grid>
 
           <Grid item xs={12} sm={6} md={6} style={{ position: "relative" }}>
-            <img src={two} alt="Our Vision" style={{ borderRadius: "8px" }} />
-            <span
-              style={{
-                position: "absolute",
-                top: "25%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                fontWeight: "bold",
-                padding: "5px",
-                color: "#fff",
-                fontSize: "1.5rem",
-                textAlign: "center",
-              }}
-            >
-              Our Vision
-            </span>
+            <img src={three} alt="Our Vision" style={{ borderRadius: "8px" }} />
+            <VisionSpan>Our Vision</VisionSpan>
             <Typography variant="body1" paragraph sx={{ mt: 2 }}>
               Our vision is to be a leader in the architecture and construction
               industry, renowned for our creativity, quality, and integrity. We
