@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Typography,
@@ -59,6 +59,10 @@ const Construction = () => {
     setSelectedService(null);
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts
+  }, []);
+
   return (
     <Container maxWidth="lg" sx={{ marginTop: "2.5rem", mb: 8 }}>
       <Box
@@ -89,11 +93,14 @@ const Construction = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
           <Typography variant="body1" paragraph>
-            At Bukko Design and Construction Bureau Ltd., our construction
-            services are defined by precision, quality, and a client-centric
-            approach. We manage every aspect of the building process, from
-            initial planning and permitting to final inspections and project
-            handover.
+            At{" "}
+            <span style={{ fontWeight: "bold" }}>
+              Bukko Design and Construction Bureau Ltd
+            </span>
+            ., our construction services are defined by precision, quality, and
+            a client-centric approach. We manage every aspect of the building
+            process, from initial planning and permitting to final inspections
+            and project handover.
           </Typography>
           <Typography variant="body1" paragraph>
             Our team of skilled professionals ensures that each project is

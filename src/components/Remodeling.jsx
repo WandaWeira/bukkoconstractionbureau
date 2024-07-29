@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Typography,
@@ -11,7 +11,7 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import remodel0 from "../assets/remodel0.jpg";
+import remodel0 from "../assets/remodelling.jpg";
 import remodel1 from "../assets/remodel1.jpg";
 import remodel2 from "../assets/remodel2.jpg";
 import remodel3 from "../assets/remodel3.jpg";
@@ -20,7 +20,7 @@ import remodeling from "../assets/remodeling.jpeg";
 
 const services = [
   {
-    image: remodel1,
+    image: remodel0,
     // text: "A HIGHLY TRAINED HOME MAINTENANCE SERVICE, LICENSED & INSURED AND LOCATED ON SITE",
     // details: "Detailed information about the home maintenance service.",
   },
@@ -57,6 +57,9 @@ const Remodeling = () => {
     setOpen(false);
     setSelectedService(null);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts
+  }, []);
 
   return (
     <Container maxWidth="lg" sx={{ marginTop: "2.5rem", mb: 8 }}>

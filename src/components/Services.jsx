@@ -8,7 +8,7 @@ import {
   Container,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom"; // Import useLocation
 import one from "../assets/one.png";
 import two from "../assets/two.png";
 import three from "../assets/three.png";
@@ -223,14 +223,19 @@ const tabData = [
 const Services = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("sm"));
+  const location = useLocation(); // Use useLocation hook
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTabIndex((prevIndex) => (prevIndex + 1) % tabData.length);
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the route changes
+  }, [location]);
 
   return (
     <Box

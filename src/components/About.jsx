@@ -39,22 +39,22 @@ const About = () => {
               </span>{" "}
               is a leading firm renowned for its innovative designs and quality
               construction. Originally starting as a small team with a vision to
-              redefine industry standards, Bukko quickly distinguished itself
+              redefine industry standards, <span  style={{ fontWeight: "bold" }}>Bukko</span> quickly distinguished itself
               through the founders' commitment to excellence. This dedication
               enabled the company to expand its scope from residential and
               commercial projects to include industrial and public structures as
               well.
             </Typography>
             <Typography variant="body1" paragraph>
-              Emphasizing creative yet functional design, Bukko integrates
+              Emphasizing creative yet functional design, <span  style={{ fontWeight: "bold" }}>Bukko</span> integrates
               aesthetics with practicality in every project. Their meticulous
               construction methods ensure that each build meets the highest
-              standards of quality and safety. This approach has helped Bukko
+              standards of quality and safety. This approach has helped <span  style={{ fontWeight: "bold" }}>Bukko</span>
               build a reputation for delivering exceptional projects that not
               only meet but exceed client expectations.
             </Typography>
             <Typography variant="body1" paragraph>
-              Client-centered service is a cornerstone of Bukko's philosophy.
+              Client-centered service is a cornerstone of <span  style={{ fontWeight: "bold" }}>Bukko's</span> philosophy.
               They work closely with each client to understand their unique
               needs and goals, ensuring that the final outcome aligns perfectly
               with the client's vision. Sustainable practices are also integral
@@ -63,7 +63,7 @@ const About = () => {
               structures.
             </Typography>
             <Typography variant="body1" paragraph>
-              Today, Bukko Design and Construction Bureau Ltd. continues to push
+              Today, <span  style={{ fontWeight: "bold" }}>Bukko Design and Construction Bureau Ltd</span>. continues to push
               industry boundaries, staying at the forefront of design and
               construction trends. Their unwavering commitment to innovation and
               excellence allows them to create spaces that inspire, endure, and

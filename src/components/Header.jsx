@@ -28,6 +28,7 @@ const Header = () => {
     setAnchorEl(null);
   };
 
+  
   const navItems = [
     { text: "HOME", path: "/" },
     { text: "CONSTRUCTION", path: "/construction" },

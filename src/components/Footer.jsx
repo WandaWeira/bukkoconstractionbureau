@@ -30,9 +30,9 @@ const Footer = () => {
       <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
         <Grid container spacing={4}>
           <Grid item xs={12} md={4}>
-            <Typography variant="h4" sx={{ fontWeight: "bold" }}>
+            {/* <Typography variant="h4" sx={{ fontWeight: "bold" }}>
               BUKKO DESIGN & CONSTRUCTION BUREAU
-            </Typography>
+            </Typography> */}
             <Box>
               <Box component="img" src={Logo} sx={{ width: "50%", mt: 3 }} />
             </Box>

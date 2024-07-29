@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Container,
   Typography,
@@ -56,6 +56,9 @@ const Architecture = () => {
     setOpen(false);
     setSelectedService(null);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts
+  }, []);
 
   return (
     <Container maxWidth="lg" sx={{ marginTop: "2.5rem", mb: 8 }}>
