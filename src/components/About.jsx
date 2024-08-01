@@ -4,7 +4,7 @@ import { styled } from "@mui/system";
 import aboutsus from "../assets/aboutus.jpg";
 import one from "../assets/one.png";
 import two from "../assets/two.png";
-import three from "../assets/three.png";
+import three from "../assets/four.png";
 
 const MissionSpan = styled("span")(({ theme }) => ({
   position: "absolute",
