@@ -51,7 +51,7 @@ const Footer = () => {
                 <br />
                 annex building, ground floor, rm 1
                 <br />
-                +256 782 500 843
+                +256 782 500 843 | 0200 905 388
                 <br />
                 <Link
                   href="mailto:bukkoconstructionbureau@gmail.com"

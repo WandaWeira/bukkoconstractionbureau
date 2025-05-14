@@ -36,7 +36,7 @@ const ContactUs = () => {
               </IconButton>
               <Box ml={2}>
                 <Typography variant="subtitle1">Phone</Typography>
-                <Typography variant="body1">+256 782 500 843</Typography>
+                <Typography variant="body1">+256 782 500 843 | 0200 905 388</Typography>
               </Box>
             </Box>
             <Box display="flex" alignItems="center" mb={2}>
